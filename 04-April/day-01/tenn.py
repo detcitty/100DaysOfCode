@@ -7,3 +7,6 @@ print(result.status_code)
 c = result.content
 
 soup = BeautifulSoup(c, "lxml")
+
+#prints the entire Markup of the url
+print(soup.findAll(id="Content"))
