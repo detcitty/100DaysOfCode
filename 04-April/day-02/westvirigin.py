@@ -17,3 +17,6 @@ soup = BeautifulSoup(c, "lxml")
 
 #print(soup.find_all('state'))
 print(soup.text)
+
+#Trying to download rosters using Pything
+#Website is built using asp.Net
