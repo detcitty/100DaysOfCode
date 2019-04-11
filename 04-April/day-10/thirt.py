@@ -3,10 +3,10 @@
 def thirt(n):
     # your code
     remainders = [1, 10, 9, 12, 3, 4]
-
-    numbers = n.split("")
-
-    for i in range(len(n)):
-
+    sum = 0
+    for i in map(int, str(n)):
+        step = remainders[i % 6]
+        sum += i * step
+        print(step)
 
 thirt(8529)
