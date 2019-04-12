@@ -12,8 +12,18 @@ def delete_nth(order,max_e):
         bag.update({unique_numbers[i], 0})
 
     for i in range(len(order)):
-        print(bag[order[i]])
+        keys = bag.keys()
+        new_list.append(order[i])
+        if(order[i] is not in keys):
+            bag.update({unique_numbers[i], 0})
+        elif(bag[order[i]] < max_e):
+            number = bag[order[i]]
+            bag.update{{order[i], number+1}}
+        else:
+            del new_list[i]
 
+    print(bag[order[i]])
+    return(new_list)
 
 
 
