@@ -4,21 +4,17 @@ def delete_nth(order,max_e):
     # code here
 
     #create dictionary to count instances of number
-    unique_numbers = set(order)
-
     bag = {}
-
-    for i in range(len(unique_numbers)):
-        bag.update({unique_numbers[i], 0})
-
+    new_list = []
+    
     for i in range(len(order)):
         keys = bag.keys()
         new_list.append(order[i])
-        if(order[i] is not in keys):
-            bag.update({unique_numbers[i], 0})
+        if(order[i] not in keys):
+            bag.update({order[i], 0})
         elif(bag[order[i]] < max_e):
             number = bag[order[i]]
-            bag.update{{order[i], number+1}}
+            bag.update({order[i], number+1})
         else:
             del new_list[i]
 
