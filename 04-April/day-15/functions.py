@@ -23,7 +23,10 @@ def nine(): #your code here
     retrun 9
 
 def plus(): #your code here
-    
+    return None
 def minus(): #your code here
+    return None
 def times(): #your code here
+    return None
 def divided_by(): #your code here
+    return None
