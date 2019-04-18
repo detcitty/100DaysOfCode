@@ -15,14 +15,20 @@ def opposite(arr, second):
 
 def dirReduc(arr):
     path = arr
-    for i in range(len(arr)):
-        if(i == len(arr) - 1):
-            break
+
+    i = 0
+    len_path = len(path)
+
+
+    while(i < len_path - 1):
+        if(opposite(path[i], path[i+1])):
+            del path[i]
+            del path[i]
+            i = 0
+            len_path -= 2
         else:
-            if (opposite(arr[i], arr[i+1])):
-                continue
-            else:
-                path.append(arr[i])
+            i += 1
+
     return path
 
 a = ["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"]
