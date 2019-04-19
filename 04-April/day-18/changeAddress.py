@@ -4,12 +4,15 @@ def binary(bit):
     start = bit
     rounds = []
     remainder = []
-    while(start > 2):
-        start = int(round(start / 2))
+    while(start > 1):
+
         left_over = start % 2
+        start = int(round(start / 2))
+
 
         rounds.append(start)
         remainder.append(left_over)
+    return(rounds, remainder)
 
 
 def ip_to_int32(ip):
@@ -17,4 +20,4 @@ def ip_to_int32(ip):
 
   separated = ip.split(".")
 
-print(binary(128))
+print(binary(32))
