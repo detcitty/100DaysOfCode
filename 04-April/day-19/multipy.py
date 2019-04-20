@@ -3,8 +3,9 @@ def multiplication_table(row,col):
     table = [[] for x in range(row)]
     for i in range(col):
         for j in range(row):
-            value = i * j
-            table[i][j] = value
+            value = (i+1) * (j+1)
+            table[i].append(value)
+            # table[j][i] = value
 
     return table
 
