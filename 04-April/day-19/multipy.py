@@ -1,3 +1,5 @@
+# https://www.codewars.com/kata/5432fd1c913a65b28f000342/solutions/python
+
 def multiplication_table(row,col):
     # Good Luck!
     table = [[] for x in range(row)]
