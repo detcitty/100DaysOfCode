@@ -6,7 +6,7 @@ def max_ball(v0):
     # your code
     # convert v0 to m/hr
 
-    v_meter = v0 * 1000
+    v_meter = v0 * 1000/(60*60)
     t = 0
     height = 0
     g = 9.81
@@ -15,13 +15,17 @@ def max_ball(v0):
     height_list = []
 
     theory_max_height = v_meter / g
+    print('This is max height {}'.format(theory_max_height))
 
     while(height < theory_max_height):
-        height = v_meter*t - 0.5 * g*t*t
         t_list.append(t)
         height_list.append(height)
 
-        t = t*1.1
+        height = v_meter*t - 0.5 * g*t*t
+        print(height)
+
+
+        t = t + .1
 
 
 
