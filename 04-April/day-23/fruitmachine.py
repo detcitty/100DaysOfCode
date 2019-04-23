@@ -15,4 +15,4 @@ def fruit(reels, spins):
 
 reel = ["Wild","Star","Bell","Shell","Seven","Cherry","Bar","King","Queen","Jack"]
 spin = [0,0,0]
-fruit([reel,reel,reel],spin)
+print(fruit([reel,reel,reel],spin))
