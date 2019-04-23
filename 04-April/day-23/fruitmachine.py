@@ -1,6 +1,10 @@
+# https://www.codewars.com/kata/590adadea658017d90000039/train/python
+
+from collections import Counter
+
 def fruit(reels, spins):
     # Code here
-
+    score = 0
     reel_length = len(reels)
     answers = []
 
@@ -9,12 +13,17 @@ def fruit(reels, spins):
             answers.append(reels[i][spins[i]])
         else:
             answers.append(reel[spins[i]])
+    count = Counter(answers)
+    size_count = len(count.getkeys())
+    if size_count == 3:
+        score = 0
+    return score
 
-    return answers
 
 
-reel1 = ["Wild","Star","Bell","Shell","Seven","Cherry","Bar","King","Queen","Jack"]
-reel2 = ["Bar", "Wild", "Queen", "Bell", "King", "Seven", "Cherry", "Jack", "Star", "Shell"]
-reel3 = ["Bell", "King", "Wild", "Bar", "Seven", "Jack", "Shell", "Cherry", "Queen", "Star"]
-spin = [5,4,3]
+
+reel1 = ["King", "Cherry", "Bar", "Jack", "Seven", "Queen", "Star", "Shell", "Bell", "Wild"]
+reel2 = ["Bell", "Seven", "Jack", "Queen", "Bar", "Star", "Shell", "Wild", "Cherry", "King"]
+reel3 = ["Wild", "King", "Queen", "Seven", "Star", "Bar", "Shell", "Cherry", "Jack", "Bell"]
+spin = [0,0,1]
 print(fruit([reel1,reel2,reel3],spin))
