@@ -13,6 +13,8 @@ def fruit(reels, spins):
     return answers
 
 
-reel = ["Wild","Star","Bell","Shell","Seven","Cherry","Bar","King","Queen","Jack"]
-spin = [0,0,0]
-print(fruit([reel,reel,reel],spin))
+reel1 = ["Wild","Star","Bell","Shell","Seven","Cherry","Bar","King","Queen","Jack"]
+reel2 = ["Bar", "Wild", "Queen", "Bell", "King", "Seven", "Cherry", "Jack", "Star", "Shell"]
+reel3 = ["Bell", "King", "Wild", "Bar", "Seven", "Jack", "Shell", "Cherry", "Queen", "Star"]
+spin = [5,4,3]
+print(fruit([reel1,reel2,reel3],spin))
