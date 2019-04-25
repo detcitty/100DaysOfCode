@@ -1,3 +1,5 @@
+# https://www.codewars.com/kata/56548dad6dae7b8756000037/train/python
+
 def what_is_the_time(time_in_mirror):
     # Your code here
     time = time_in_mirror.split(":")
@@ -6,7 +8,7 @@ def what_is_the_time(time_in_mirror):
     minute = int(time[1])
     print(hour)
     print(minute)
-    hour_mirror = 12 - (hour % 12) - 1
+    hour_mirror = 12 - (hour % 12)
     minute_mirror = 60 - (minute % 60)
     print(hour_mirror)
     print(minute_mirror)
