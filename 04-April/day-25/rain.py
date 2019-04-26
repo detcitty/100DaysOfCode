@@ -2,6 +2,18 @@
 
 def town_data(town):
     towns_sep = town.split("\n")
+    cleaned = []
+    for info in towns:
+        name = info.split(":")
+        data = name[1].split(",")
+
+        for i in data:
+            info = {}
+            town_month = i.split(" ")[0]
+            town_measure = i.split(" ")[1]
+
+
+
     return(towns_sep)
 
 def mean(town, strng):
