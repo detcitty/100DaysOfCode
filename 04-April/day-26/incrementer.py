@@ -2,7 +2,7 @@
 import re
 
 def increment_string(strng):
-    re.search('.*[0-9])', strng)
-    return strng
+    test = re.search('[0-9]', strng)
+    return test
 
 print(increment_string("foobar001"))
