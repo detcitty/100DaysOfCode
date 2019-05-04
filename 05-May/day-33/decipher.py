@@ -5,7 +5,8 @@ def decipher_this(string):
     words = string.split(" ")
     for w in words:
         first = re.match('\d+', w).group(0)
-        second = re.search('\D+', w).__getitem__()
+        second = re.search('\D+', w)
+        second.groups()
         print(first, "This is work", second)
 
     return words
