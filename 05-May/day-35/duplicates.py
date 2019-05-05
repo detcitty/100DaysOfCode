@@ -2,9 +2,9 @@
 
 def duplicate_count(text):
     # Your code goes here
-    letters = dict.fromkeys(set(text))
+    letters = dict.fromkeys(set(text.lower()))
 
-    for i in text:
+    for i in text.lower():
 
         if(letters[i] == None):
             letters[i] = 1
