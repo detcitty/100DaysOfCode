@@ -5,6 +5,14 @@ def compute_depth(n):
 
     for i in range(1,10):
         multiple = i * n
+        str_num = str(multiple)
+
+        numbers = []
+        print(str_num)
+        for j in len(str_num):
+            numbers.append(int(j))
+
+
         values.append(multiple)
     return values
 print(compute_depth(42))
