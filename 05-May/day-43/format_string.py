@@ -15,7 +15,7 @@ def namelist(names):
         elif(left == 1):
             final_str += "& " + first_name
         else:
-            final_str += ", " + first_name
+            final_str += first_name + ", "
 
         left -= 1
     return final_str
