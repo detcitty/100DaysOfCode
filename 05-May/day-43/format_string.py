@@ -12,6 +12,8 @@ def namelist(names):
 
         if(left == 2):
             final_str += first_name + " "
+        elif(left == 1 and len(names) == 1):
+                    final_str = first_name
         elif(left == 1):
             final_str += "& " + first_name
         else:
