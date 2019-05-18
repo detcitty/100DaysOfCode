@@ -15,22 +15,25 @@ def lowest_product(input):
     deq = deque(ls)
     values = deque()
     sums = []
-    min = 0
     while (len(deq) is not 0):
         if (len(values) != 4):
             values.append(deq.popleft())
         else:
-            sum = 0
+            sum = 1
             str_sum = ""
             for i in values:
-                sum += i
+                sum *= i
                 str_sum += str(i)
-            print(consecutive(str_sum))
-            sums.append(sum)
-            print(str_sum, sum)
+            #print(consecutive(str_sum))
+
+            if consecutive(str_sum):
+                sums.append(sum)
+                #print(str_sum, sum)
             values.popleft()
             values.append(deq.popleft())
-
+    minimum = min(sums)
+    return minimum
 
 #lowest_product("123456789")
 lowest_product("2345611117899")
+lowest_product("123456789")
