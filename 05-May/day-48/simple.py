@@ -12,13 +12,11 @@ def simple_transposition(text):
     second_row = []
 
     for i in range(size):
-        
-        
-        first_row.append(text[i])
-        second_row.append(text[size+i])
+        first_row.append(text[i*2])
+        second_row.append(text[i*2+1])
     print(size)
     print(first_row)
     print(second_row)
     #return
 
-simple_transposition("Simple transposition")
+simple_transposition("Simple transposition1")
