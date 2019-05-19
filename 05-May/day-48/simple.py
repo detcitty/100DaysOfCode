@@ -14,9 +14,15 @@ def simple_transposition(text):
     for i in range(size):
         first_row.append(text[i*2])
         second_row.append(text[i*2+1])
-    print(size)
-    print(first_row)
-    print(second_row)
-    #return
+
+    text1 = ""
+    text2 = ""
+
+    for i in range(size):
+        text1 += first_row[i]
+        text2 += second_row[i]
+
+    final_text = text1 + text2
+    return final_text.strip()
 
 simple_transposition("Simple transposition1")
