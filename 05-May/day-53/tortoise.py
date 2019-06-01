@@ -22,3 +22,5 @@ def race(v1, v2, g):
     return results
 
 print(race(80, 100, 40))
+print(race(80, 91, 37))
+print(race(720, 850, 70))
