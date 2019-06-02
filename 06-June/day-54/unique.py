@@ -7,22 +7,17 @@ def find_uniq(arr):
     first = unique[0]
     second = unique[1]
     #print(first, second)
-    count_first = 0
-    count_second = 0
+    count = [0,0]
 
     value = 0
     for e in arr:
-        print(e)
+        #print(e)
         if(e == first):
-            count_first += 1
+            count[0] += 1
         elif(e == second):
-            count_second += 1
+            count[1] += 1
 
-    
-    if(count_first > 2):
-        value = first
-    elif(count_second > 2):
-        value = second
+    value = unique[count.index(max(count))]
             
 
 
