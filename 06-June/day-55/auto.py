@@ -6,7 +6,7 @@ def autocomplete(input_, dictionary):
     #your code here
     found = []
     for e in dictionary:
-        z = re.match(input_+ ".+", e)
+        z = re.match(input_+ ".+", e, re.IGNORECASE)
 
         if z:
             found.append(z.group())
