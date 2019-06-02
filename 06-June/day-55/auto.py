@@ -4,9 +4,16 @@ import re
 
 def autocomplete(input_, dictionary):
     #your code here
+    valids = []
+    for character in input_:
+        if character.isalpha():
+            valids.append(character)
+
+    only_alpha =  ''.join(valids)
+
     found = []
     for e in dictionary:
-        z = re.match(input_+ ".+", e, re.IGNORECASE)
+        z = re.match(only_alpha+ ".+", e, re.IGNORECASE)
 
         if z:
             found.append(z.group())
