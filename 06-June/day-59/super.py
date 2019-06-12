@@ -6,4 +6,4 @@ def queue_time(customers, n):
     q = Queue.queue()
     for i in range(len(customers)):
         q.put(i)
-
+queue_time([2,2,3,3,4,4], 2)
