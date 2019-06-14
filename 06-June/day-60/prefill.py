@@ -3,5 +3,7 @@
 def prefill(n, v):
     #your code here
 
-    value = map(v, v*range(len(n)))
+    value = map(v, v*range(n))
+    return value
 
+print(prefill(3,1))
