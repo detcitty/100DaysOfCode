@@ -7,10 +7,10 @@ def duplicate_encode(word):
     value = ""
     for ch in word:
         if (ch in unique):
-            value += "("
+            value += ")"
         else:
             unique += ch
-            value += ")"
+            value += "("
     return(value)
 
 print(duplicate_encode("Success"))
