@@ -13,6 +13,11 @@ class Triangle(Point):
         self.b = second
         self.c = third
 
+#https://www.geeksforgeeks.org/itertools-combinations-module-python-print-possible-combinations/
+'''
+Use the distance formula between the points
+There are 3 sets to calculate the distance formula
+'''
 def triangle_perimeter(triangle):
     # your solution here
     sets = list(combinations(triangle, 2))
