@@ -1,5 +1,10 @@
 def solution(s):
-    v = s.split()
+    v = [char for char in s]
+
+
+    for i in v:
+        
+
     return(v)
 
 
