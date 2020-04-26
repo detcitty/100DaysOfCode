@@ -1,3 +1,5 @@
+# https://www.codewars.com/kata/515e188a311df01cba000003/solutions/python
+
 def get_planet_name(id):
     switcher = {
         1: "Mercury",
