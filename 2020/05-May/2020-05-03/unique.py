@@ -9,7 +9,7 @@ def find_uniq(arr):
             items[e] = 1
         else:
             items[e] += 1
-    key_max = max(items.keys(), key=(lambda k: items[k]))
+    #key_max = max(items.keys(), key=(lambda k: items[k]))
     key_min = min(items.keys(), key=(lambda k: items[k]))
 
     return key_min   # n: unique integer in the array
