@@ -2,8 +2,9 @@
 
 def isUpper(maybe):
     values = list(maybe)
+    is_alpha = list(filter(lambda x: x.isalpha(), values))
 
-    is_true = map(lambda x: x.isupper(), values)
+    is_true = map(lambda x: x.isupper(), is_alpha)
     return (all(is_true))
 
 
