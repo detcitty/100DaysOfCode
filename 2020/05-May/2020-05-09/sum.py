@@ -17,7 +17,8 @@ def row_sum_odd_numbers(n):
             test.append(odd_numbers.pop(0))
         values.append(test)
     #print(values[n-1])
-    return(sum(values[n-1]))
+    row_values = values[n-1]
+    return(sum(row_values))
 
 
 row_sum_odd_numbers(5)
