@@ -3,9 +3,12 @@
 import math
 
 def split_and_add(numbers, n):
-    length_numbers = len(numbers)
-    test = list(range(1, 10))
-    values = list(map(lambda x: math.ceil(x/(len(test)/3)), test))
-    print(values)
+    values = list(map(lambda x: math.ceil(x/(len(numbers)/3)), numbers))
+    
+    where_2 = [{'list:':math.floor(i/(len(numbers)/(n+1))), 'value':x } for i,x in enumerate(numbers)]
+    data = {k: [] for k in where_2.keys()}
 
-split_and_add([1,2,3], 3)
+    test_2 = map(lambda x, y: y[x['list']].append(x['value']),where_2, data)
+    print(where_2)
+
+split_and_add([1,2,3,2,23,34, 34], 2)
