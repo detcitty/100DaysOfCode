@@ -11,5 +11,5 @@ print(time.strftime("%A", time.localtime()))
 
 print(list(map(lambda x: 2**x, list(range(33)))))
 
-sin_x = np.range(100)
-print(np.numpy(sin_x))
+sin_x = np.arange(100)
+print(np.exp(sin_x))
