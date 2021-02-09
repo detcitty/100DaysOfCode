@@ -8,3 +8,5 @@ for i in range(0, 10):
 print(values)
 
 print(time.strftime("%A", time.localtime()))
+
+print(list(map(lambda x: 2**2, list(range(33)))))
