@@ -6,3 +6,6 @@ print(xx)
 
 x = np.zeros(10)
 print(x)
+
+x1 = np.arange(100)
+np.sum(np.arcsin(x1))
