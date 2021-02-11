@@ -8,4 +8,4 @@ x = np.zeros(10)
 print(x)
 
 x1 = np.arange(100)
-np.sum(np.arcsin(x1))
+np.sum(np.reciprocal(x1))
