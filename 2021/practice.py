@@ -13,3 +13,6 @@ print(list(map(lambda x: 2**x, list(range(33)))))
 
 sin_x = np.arange(100)
 print(np.exp(sin_x))
+
+print("Hello world")
+
