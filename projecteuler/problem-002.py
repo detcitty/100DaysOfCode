@@ -12,5 +12,7 @@ while values_array[-1] + values_array[-2] < max_value:
         values_array.append(next_value)
     else:
         values_array.append(next_value)
-
-print(sum(values_array))
+print(values_array)
+even_values = list(map(lambda x: x if x % 2 == 0 else 0, values_array))
+print(even_values)
+print(sum(even_values))
