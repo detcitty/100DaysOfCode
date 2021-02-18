@@ -7,4 +7,4 @@ for i in range(end_2):
     round_ = values % i
     print(round_)
 
-
+x = map(lambda x, y: x %y, np.arange(20), 3)
