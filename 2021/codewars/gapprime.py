@@ -5,7 +5,7 @@ def gap(g, m, n):
     # I don't know how to find prime numbers efficently
     for i in range(1, n):
         if n % 2 == 0:
-            is_prime.add(i)
-    return(is_primee)
+            is_prime.append(i)
+    return(is_prime)
 
 print(gap(1, 3, 14))
