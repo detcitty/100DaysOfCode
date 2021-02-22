@@ -2,8 +2,10 @@
 
 def gap(g, m, n):
     is_prime = []
+
     # I don't know how to find prime numbers efficently
     odd = [x if x % 2 != 0 else '' for x in range(n)]
-    return(odd)
+    is_prime = list(filter(None, odd))
+    return(is_prime)
 
 print(gap(1, 3, 14))
