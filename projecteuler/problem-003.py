@@ -4,14 +4,18 @@ end_ = 600851475143
 end_2 = 10
 prime_numbers = []
 for i in range(1, end_2):
+    print(i)
     if (i <= 2 or i % 2 != 0):
         prime_numbers.append(i)
         for p in prime_numbers:
-            if (i > 2 or i % p  == 0):
+            if (i > 2 and i % p  == 0):
+                print("PRIME NUM: {}".format(p))
                 prime_numbers.append(i)
             else:
-                continue
+                print("HERE")
+                break
     else:
+        print("OUTSIDE")
         continue
     print(prime_numbers)
 
