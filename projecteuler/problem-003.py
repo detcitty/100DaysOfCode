@@ -17,7 +17,7 @@ for i in range(1, end_2):
         prime_numbers.append(i)
     else:
         print("OUTSIDE")
-        continue
+        break
     print(prime_numbers)
 
 x = map(lambda x, y: x %y, np.arange(20), np.arange(20))
