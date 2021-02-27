@@ -8,4 +8,4 @@ def find_difference(a, b):
         total_a *= a[i]
         total_b *= b[i]
 
-    return(total_a - total_b)
+    return(abs(total_a - total_b))
