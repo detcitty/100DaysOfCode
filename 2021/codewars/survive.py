@@ -2,5 +2,4 @@
 
 def hero(bullets, dragons):
     rounds = int(bullets / 2.0)
-
     return rounds >= dragons
