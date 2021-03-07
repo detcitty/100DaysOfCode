@@ -2,4 +2,4 @@
 
 def greet(name, owner):
     # Add code here
-    return f"Hello {name}" if name==owner else f"Hello {name}"
+    return f"Hello boss" if name==owner else f"Hello guest"
