@@ -2,4 +2,4 @@
 
 def cockroach_speed(s):
     # Good Luck!
-    return(int(s/10000*3600))
+    return(int(s*27.7778))
