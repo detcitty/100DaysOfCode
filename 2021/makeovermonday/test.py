@@ -9,3 +9,10 @@ import datadotworld as dw
 # First
 # Import the city council votes dataset
 dataset = dw.load_dataset('stephen-hoover/chicago-city-council-votes')
+all_dfs = dataset.dataframes
+votes = all_dfs['alderman_votes']
+print(votes.head())
+print(votes.describe())
+print(all_dfs)
+print(dataset)
+#print(dataset.head())
