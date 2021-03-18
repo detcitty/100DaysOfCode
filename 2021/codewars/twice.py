@@ -3,6 +3,6 @@
 def twice_as_old(dad_years_old, son_years_old):
     sons_double = son_years_old * 2
 
-    diff_ = abs(sons_double - dads_years_old)
+    diff_ = abs(sons_double - dad_years_old)
 
     return(diff_)
