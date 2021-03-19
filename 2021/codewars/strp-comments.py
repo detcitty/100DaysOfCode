@@ -3,8 +3,8 @@ import re
 
 def solution(string,markers):
     #your code here
-    remove_regex = r'[\#\!](.*)([\n$])'
-    final = re.sub(remove_regex, "\2", string, flags=re.M)
+    remove_regex = r'[\#\!\n]([^\n\!\#$]*)([\n$])'
+    final = re.sub(remove_regex, "\3", string, flags=re.M)
     return(final)
 
 te = solution("apples, pears # and bananas\ngrapes\nbananas !apples", ["#", "!"])
