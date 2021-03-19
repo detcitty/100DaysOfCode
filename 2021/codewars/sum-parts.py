@@ -4,4 +4,8 @@ def parts_sums(ls):
     # your code
     
     lists = [i+1 for i in range(len(ls))]
-    print(lists)
+    #print(lists)
+    return(lists)
+
+syn = parts_sums([0, 1, 3, 6, 10])
+print(syn)
