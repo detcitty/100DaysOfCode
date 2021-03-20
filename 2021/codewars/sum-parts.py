@@ -3,7 +3,7 @@
 def parts_sums(ls):
     # your code
     
-    lists = [i for i in range(len(ls))]
+    lists = [i for i in range(len(ls)+1)]
     print(lists)
     calc = lambda x, y: sum(x[y:])
     results = [calc(ls,p) for p in lists]
