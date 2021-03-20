@@ -3,8 +3,9 @@
 def parts_sums(ls):
     # your code
     
-    lists = [i+1 for i in range(len(ls))]
-    calc = lambda x, y: sum(x[:y])
+    lists = [i for i in range(len(ls))]
+    print(lists)
+    calc = lambda x, y: sum(x[y:])
     results = [calc(ls,p) for p in lists]
     #print(lists)
     return(results)
