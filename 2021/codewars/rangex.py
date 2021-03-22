@@ -5,11 +5,11 @@ def solution(args):
     # i = 0
     # end_i = len(args)
     new_array = []
-
+    count = []
     for i in range(len(args)-1):
         print(i)
         if (args[i]+1 == args[i+1]):
-            continue
+            count.append(i)
         else:
             new_array.append(args[i])
     return(new_array)
