@@ -10,13 +10,16 @@ def solution(args):
     while i < end_i - 1:
         print(i)
         if (args[i]+1 == args[i+1]):
-            clear.append(i)
+            clear.append(args[i])
             i += 1
+            print(clear)
         else:
             values = ' '.join([str(elem) for elem in clear]) 
-            new_array.append(args[i])
+            
             new_array.append(values)
-            clear = []
+            new_array.append(args[i])
+            clear = [] 
+            
             i += 1
     return(new_array)
 
