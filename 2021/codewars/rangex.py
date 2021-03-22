@@ -2,12 +2,13 @@
 
 def solution(args):
 
-    i = 0
-    end_i = len(args)
-    new_array = [args[0]]
+    # i = 0
+    # end_i = len(args)
+    new_array = []
 
     for i in range(len(args)-1):
-        if args[i] != (args[i+1] + 1):
+        print(i)
+        if (args[i]+1 == args[i+1]):
             continue
         else:
             new_array.append(args[i])
