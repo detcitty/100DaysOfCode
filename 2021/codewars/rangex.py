@@ -6,8 +6,8 @@ def solution(args):
     end_i = len(args)
     new_array = [args[0]]
 
-    for i in range(len(args)):
-        if args[i] == args[i+1]:
+    for i in range(len(args)-1):
+        if args[i] != (args[i+1] + 1):
             continue
         else:
             new_array.append(args[i])
