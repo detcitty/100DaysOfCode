@@ -4,4 +4,7 @@ def solution(a):
     first = a[1] - a[0]
     second = a[2] - a[0]
     third = a[2] - a[1]
+    
+    values = [first, second, third]
+
     return # smallest possible sum of all numbers
