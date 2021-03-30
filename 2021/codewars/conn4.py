@@ -7,7 +7,7 @@ class Connect4():
     def __init__(self):
         # code here
 
-        pass
+        self.start = None
 
     def play(self, col):
         # code here
