@@ -7,7 +7,7 @@ class Mongo(object):
     @classmethod
     def is_valid(cls, s):
         """returns True if s is a valid MongoId; others False"""
-        pass
+        print("This is a test")
 
     def get_timestamp(cls, s):
         """if s is a MongoID, returns a datetime object"""
