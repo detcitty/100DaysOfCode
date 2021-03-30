@@ -10,9 +10,16 @@ end = datetime(2019, 9, 1)
 
 pp = pprint.PrettyPrinter(indent=4)
 
-msft = yf.Ticker("MSFT")
-victory = yf.Ticker("VACI")
-x_10 = yf.Ticker("VCVC")
+tickers = ['MSFT', 'VACI', 'VCVC', 'ZNTE']
+
+
+for tick in tickers:
+    tick_stuff = yf.Ticker(tick)
+    print(tick_stuff.history())
+    print(tick)
+#msft = yf.Ticker("MSFT")
+#victory = yf.Ticker("VACI")
+#x_10 = yf.Ticker("VCVC")
 
 #pp.pprint(x_10._download_options())
-pp.pprint(x_10.major_holders())
+#pp.pprint(x_10.major_holders())
