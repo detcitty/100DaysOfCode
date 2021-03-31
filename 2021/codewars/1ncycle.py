@@ -5,3 +5,6 @@ def cycle(n):
     for i in range(n):
         decimals = 1/float(n)
         values.append(decimals)
+
+val = cycle(3)
+print(val)
