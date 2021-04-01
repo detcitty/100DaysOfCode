@@ -3,7 +3,7 @@
 def cycle(n):
     values = []
     for i in range(n):
-        decimals = 1/float(n)
+        decimals = 1/float(n+1)
         values.append(decimals)
 
 val = cycle(3)
