@@ -2,9 +2,11 @@
 
 def mouth_size(animal):
 
+    value = ''
     if animal == 'alligator':
-        return("small")
+        value = "small"
     else:
-        return("wide")
-
+        value = "wide"
+    return(value)
+    
 print(mouth_size("ant"))
