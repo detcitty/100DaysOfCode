@@ -5,11 +5,11 @@ end_2 = 10
 prime_numbers = []
 
 half = end_ / 2
-
 fake = np.arange(0, half, 2)
 #print(fake)
 for i in range(1, half):
     print(prime_numbers)
+
     if (i > 2 or i % 2 != 0):
         for p in prime_numbers:
             if (i > 2 and i % p  == 0):
@@ -17,7 +17,7 @@ for i in range(1, half):
                 prime_numbers.append(i)
             else:
                 print("HERE")
-                break
+                continue
     elif (i == 1 or i == 2):
         prime_numbers.append(i)
     else:
