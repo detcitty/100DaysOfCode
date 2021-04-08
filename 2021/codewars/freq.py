@@ -4,7 +4,7 @@ import re
 def top_3_words(text):
     lowercase = text.lower()
     cleaned = re.sub(r'[^A-Za-z\r\n\s]', '', lowercase)
-    cleaned_now = re.sub(r'[\r\n]', " ", cleaned)
+    cleaned_now = re.sub(r'[\r\n\s]', " ", cleaned)
     all_words = cleaned_now.split(" ")
     return(all_words)
 
