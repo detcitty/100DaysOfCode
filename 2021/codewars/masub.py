@@ -2,3 +2,4 @@
 
 def change(s, prog, version):
     new_string = s.split(r'\n')
+    return(new_string)
