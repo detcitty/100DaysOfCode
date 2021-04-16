@@ -1,7 +1,7 @@
 # https://www.codewars.com/kata/605f5d33f38ca800322cb18f/train/python
 
 def tap_code_translation(text):
-    split = text.split(r'\s')
+    split = text.split(r'[\s\r\n]')
     for i in split:
         print(i)
 
