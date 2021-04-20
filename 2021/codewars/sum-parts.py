@@ -1,4 +1,5 @@
 # https://www.codewars.com/kata/5ce399e0047a45001c853c2b/train/python
+#I just made a stupid comment
 
 def parts_sums(ls):
     # your code
