@@ -19,3 +19,11 @@ def word_search(doc_list, keyword):
             if bag.isspace() or bag.isalpha():
                 continue
             else:
+                print(b)
+
+test_ = """I like the New Yorker magazine.
+I have been to New York City. 
+New York state is also the Empire State.
+"""
+
+example_ = word_search(test, 'New York')
