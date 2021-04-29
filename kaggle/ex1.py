@@ -11,15 +11,16 @@ def word_search(doc_list, keyword):
     >>> word_search(doc_list, 'casino')
     >>> [0]
     """
-    for doc in doc_list:
-        lower_doc = doc.lower()
-
-        bag = lower_doc.split(" ")
-        for b in bag:
-            if bag.isspace() or bag.isalpha():
-                continue
+    found = 0
+    for i, doc in enumerate(doc_list):
+        lower_doc = doc.lower().strip('.').split()
+        for word in lower_doc:
+            if keyword in word:
+                found = i
+                break
             else:
-                print(b)
+                continue
+    return([found])
 
 test_ = """I like the New Yorker magazine.
 I have been to New York City. 
