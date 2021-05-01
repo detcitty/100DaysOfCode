@@ -16,3 +16,5 @@ print(votes.describe())
 print(all_dfs)
 print(dataset)
 #print(dataset.head())
+
+votes.groupby('make').sum()
