@@ -28,3 +28,4 @@ required_n = sms.NormalIndPower().solve_power(
 required_n = ceil(required_n)
 
 print(required_n)
+print("this is a test")
