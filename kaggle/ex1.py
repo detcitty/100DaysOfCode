@@ -17,6 +17,8 @@ def word_search(doc_list, keyword):
         for word in lower_doc:
             if keyword in word:
                 found = i
+                print("here")
+                print(keyword)
                 break
             else:
                 continue
