@@ -11,4 +11,4 @@ def multi_word_search(doc_list, keywords):
     >>> multi_word_search(doc_list, keywords)
     {'casino': [0, 1], 'they': [1]}
     """
-    pass
+    cleaned = list(map(lambda x: x.strip(), doc_list))
