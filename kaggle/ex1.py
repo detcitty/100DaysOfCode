@@ -1,5 +1,7 @@
 # https://www.kaggle.com/detcitty/exercise-strings-and-dictionaries/edit
 
+import re
+
 def word_search(doc_list, keyword):
     """
     Takes a list of documents (each document is a string) and a keyword.
@@ -15,7 +17,8 @@ def word_search(doc_list, keyword):
     for i, doc in enumerate(doc_list):
         lower_doc = doc.lower().strip('.').split()
         for word in lower_doc:
-            if keyword in word:
+            strip_word = re.sub(r'\W+', '', word)
+            if keyword in strip_word:
                 found = i
                 print("here")
                 print(keyword)
