@@ -3,4 +3,5 @@
 def solve(a, b, c, alpha, beta, gamma):
     # your code
     y = m * x + b
+    print(y)
     return(y)
