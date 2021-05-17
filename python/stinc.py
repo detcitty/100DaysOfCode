@@ -3,5 +3,5 @@ import re
 
 def increment_string(strng):
     re_text = '([^\d]*)(\d+)?'
-    return strng
+    return strng.match(re_text)
 
