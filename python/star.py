@@ -6,5 +6,7 @@ def slogan_maker(array):
     first = list(set(array[0]))
     # second = array[1]
     all_comb = list(combintations(first, len(first)))
-    return(all_comb)`
+    concat_str = list(map(lambda x: " ".join(x), all_comb))
+    return(concat_str)
+
 
