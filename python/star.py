@@ -7,6 +7,7 @@ def slogan_maker(array):
     # second = array[1]
     all_comb = list(combintations(first, len(first)))
     concat_str = list(map(lambda x: " ".join(x), all_comb))
-    return(concat_str)
+    together = '\r\n'.join(concat_str)
+    return(together)
 
 
