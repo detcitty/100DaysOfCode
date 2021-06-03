@@ -5,3 +5,6 @@ class Event():
     def __init__():
         self.event = 'event'
 
+    def fix(self, values):
+        self.values = values;
+        ' '.join(self.values))
