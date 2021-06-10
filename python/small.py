@@ -3,7 +3,7 @@
 def small_enough(array, limit):
     compare = list(map(lambda x: x <= limit, array))
     print(compare)
-    is_small = all(compare)
+    is_small = max(all(compare))
     print(is_small)
     return(is_small)
 
