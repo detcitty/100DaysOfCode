@@ -10,3 +10,6 @@ class SnakesLadders():
 
     def play(self, die1, die2):
         # Code Here
+        self.die1 = die1
+        self.die2 = die2
+        
