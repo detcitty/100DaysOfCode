@@ -5,9 +5,9 @@ def update_light(current):
     final = ''
 
     if current == 'green':
-        pass
+        final = 'yellow'
     elif current == 'yellow':
-        pass
+        final = 'red'
     else:
-        pass
+        final = 'green'
     return(final)
