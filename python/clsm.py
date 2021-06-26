@@ -5,3 +5,4 @@ def closest(string):
     values = string.split(" ")
     values.sort()
     combo = list(map(lambda x, y: [x, y], values, values))
+    clean_val = list(map(lambda x: x.strip(), combo))
