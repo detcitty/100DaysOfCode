@@ -4,8 +4,8 @@ def fillable(stock, merch, n):
     # Your code goes here.
     final_price = ''
     if merch in stock.keys():
-    	available = merch[stock] 
-    	if n >= available:
+    	available = stock[merch] 
+    	if available >= n:
     		final_price = True
     	else:
     		final_price = False
