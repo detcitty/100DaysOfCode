@@ -6,4 +6,4 @@ def code(s):
 
 def decode(s):
     # your code
-
+    s.upper()
