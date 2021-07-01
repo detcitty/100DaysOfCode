@@ -9,4 +9,10 @@ def last_digit(n):
 	lastdigit = list(num_no_zeros)[-1]
 	return(int(lastdigit))
 
+def last_digit_numpy(n):
+	practice = np.arange(1, n+1)
+	factorial = np.prod(practice)
+	return(factorial)
+
 print(last_digit(3))
+print(last_digit_numpy(6))
