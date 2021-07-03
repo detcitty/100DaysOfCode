@@ -4,6 +4,7 @@ def prime_factors(n):
 	start = 2
 	reduced_value = n:
 	values = []
+	repeat = True
 	while(reduced_value != 1):
 		if reduced_value % start == 0 and repeat == True:
 			reduced_value = reduced_value / float(start)
@@ -14,6 +15,7 @@ def prime_factors(n):
 				pass
 			else:
 				pass
-
+		else if repeat ==  True and reduced_value % start != 0:
+			pass
 		else:
 			pass
