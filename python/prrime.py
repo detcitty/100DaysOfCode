@@ -5,10 +5,15 @@ def prime_factors(n):
 	reduced_value = n:
 	values = []
 	while(reduced_value != 1):
-		if reduced_value % start == 0:
-			reduced_value = reduced_value / 2.0
+		if reduced_value % start == 0 and repeat == True:
+			reduced_value = reduced_value / float(start)
 			values.append(values)
-		else if:
-			pass
+			repeat = True
+		else if repeat == False:
+			if reduced_value % start == 0:
+				pass
+			else:
+				pass
+
 		else:
 			pass
