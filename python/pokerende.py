@@ -7,6 +7,15 @@ def encode(cards):
     'h' : 2, 
     's' : 3
     }
+
+    face_cards = {
+    'a' : 0,
+    't' : 9, 
+    'j' : 10,
+    'q' : 11,
+    'k' : 12
+    }
+
     return
 
 def decode(cards):
@@ -16,5 +25,12 @@ def decode(cards):
     2 : 'h',
     3 : 's'
     }
-
+    
+    face_cards = {
+    'a' : 0,
+    't' : 9, 
+    'j' : 10,
+    'q' : 11,
+    'k' : 12
+    }
     return
