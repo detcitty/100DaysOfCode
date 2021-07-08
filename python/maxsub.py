@@ -5,6 +5,12 @@ def find_subarr_maxsum(arr):
 	max_num = max(arr)
 	max_indices = list(filter(None, [x if y == max_num else None for x, y in enumerate(arr)]))
 	print(max_indices)
+	final_return = []
+
+	if max_num < 0:
+		final_return = [[], 0]
+	else:
+		
 	#return [[], x] # or [[[]], x]
 
 arr = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
