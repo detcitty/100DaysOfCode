@@ -3,9 +3,9 @@
 def find_subarr_maxsum(arr):
 	#your code Here
 	max_num = max(arr)
-	max_indices = [y if x == max_num else None for x, y in enumerate(arr)]
+	max_indices = list(filter(None, [x if y == max_num else None for x, y in enumerate(arr)]))
 	print(max_indices)
-	return [[], x] # or [[[]], x]
+	#return [[], x] # or [[[]], x]
 
 arr = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
 test1 = find_subarr_maxsum(arr)
