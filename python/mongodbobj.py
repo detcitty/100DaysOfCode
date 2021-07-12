@@ -2,10 +2,12 @@
 
 from datetime import datetime
 """
-1 byte = 9 bits
+1 byte = 8 bits
 a 4-byte timestamp value, representing the ObjectId's creation, measured in seconds since the Unix epoch
 a 5-byte random value
 a 3-byte incrementing counter, initialized to a random value
+
+256 patterns in 8 bits
 """
 
 class Mongo(object):
