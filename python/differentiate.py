@@ -3,4 +3,5 @@
 def differentiate(equation, point):
     values = equation.split("+")
     exponent = list(map(lambda x: x.split("x^")), values)
-    return exponent
+    return exponent**2
+
