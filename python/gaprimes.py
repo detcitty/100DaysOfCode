@@ -4,5 +4,6 @@ def gap(g, m, n):
     found_remainders = []
     for i in range(g+1):
         if g % i != 0:
+            value = abs(m - n)
             found_remainders.append(i)
     return(found_remainders)
