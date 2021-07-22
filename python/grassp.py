@@ -2,6 +2,7 @@
 
 def check_alive(health):
     if (health <= 0):
+        pass
         return False
     else:
         return True
