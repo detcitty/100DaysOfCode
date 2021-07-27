@@ -14,3 +14,9 @@ def number2words(n):
         8: "eight",
         9: "nine"
     }
+
+    numbers = list(map(lambda x: map_numbers[x], [int(i) for i in str(n)]))
+    return(numbers)
+
+test_ = number2words(1234)
+print(test_)
