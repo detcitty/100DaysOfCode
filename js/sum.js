@@ -8,3 +8,9 @@ function sum (numbers) {
 	}
 	return(sum);
 };
+
+function sum(numbers) {
+	numbers.forEach(x => {
+		x.split(' ');
+	});
+};
