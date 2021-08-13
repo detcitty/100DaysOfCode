@@ -4,6 +4,8 @@ end_ = 600851475143
 end_2 = 10
 prime_numbers = []
 
+print(prime_numbers)
+
 half = end_ / 2
 fake = np.arange(0, half, 2)
 #print(fake)
