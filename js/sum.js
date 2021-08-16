@@ -14,3 +14,5 @@ function sum(numbers) {
 		x.split(' ');
 	});
 };
+
+var test1 = sum('1 2 3 4 5 6')
