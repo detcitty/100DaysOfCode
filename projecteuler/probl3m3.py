@@ -11,7 +11,8 @@ def start(number):
     odds = list_values[(list_values % 2 == 1) | (list_values == 2)]
     odds_sans_threes = odds[(odds % 3 != 0) | (odds == 3)] 
     odds_sans_fives = odds_sans_threes[(odds_sans_threes % 5 != 0) | (odds_sans_threes == 5)]
-    return(odds_sans_fives)
+    count_files = len(odds_sans_fives)
+    return(count_files)
     #map(lambda x, y: x(y), half_way, prime)
 
 test1 = start(1000)
