@@ -7,4 +7,5 @@ class Event():
 
     def fix(self, values):
         self.values = values;
-        ' '.join(self.values))
+        fix=' '.join(self.values)
+        return(fix)
