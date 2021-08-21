@@ -1,6 +1,11 @@
 '''
 What is this code going to do?
 I am trying to figure out how prime numbers work.
+
+Directions: 
+The prime factors of 13195 are 5, 7, 13 and 29.
+
+What is the largest prime factor of the number 600851475143 ?
 '''
 
 import numpy as np
@@ -13,7 +18,8 @@ def start(number):
     odds_sans_fives = odds_sans_threes[(odds_sans_threes % 5 != 0) | (odds_sans_threes == 5)]
     count_files = len(odds_sans_fives)
     return(count_files)
+
     #map(lambda x, y: x(y), half_way, prime)
 
-test1 = start(1000)
+test1 = start(600851475143)
 print(test1)
