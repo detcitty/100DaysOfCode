@@ -18,9 +18,19 @@ def human_years_cat_years_dog_years(human_years):
             cat += 1
             dog +=1
     '''
-    dog_years = 15 + 9 * x + 5 * y
-    cat_years = 15 + 9 * x + 4 * y
-        
+
+    if (human_years < 15):
+        cat = 0
+        dog = 0
+    elif (human_years == 15):
+        cat = 1
+        dog = 1
+    elif (human_years <= 24):
+        cat = 2
+        dog = 2
+    else:
+        cat = int(( human_years - (15 + 9) ) / 5)
+        dog = int(( human_years - (15 + 9) ) / 4)
         
 
     return [human_years, cat, dog]
