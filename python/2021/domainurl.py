@@ -2,6 +2,9 @@
 import re
 
 def domain_name(url):
+	'''
+	I don't know what this does. I bet it's supposed to clear a url.
+	'''
 	beginning_regex = r"^(http[s]?)?(\:\/+)?(w{3}\.?)?"
 	mod_string = re.sub(beginning_regex, '', url, flags=re.I)
 	next_part = r"^[^\.]*"
