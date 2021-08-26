@@ -6,5 +6,6 @@ def differentiate(equation, point):
     '''
     values = equation.split("+")
     exponent = list(map(lambda x: x.split("x^")), values)
+    final = exponent.join(' ')
     return exponent**2
 
