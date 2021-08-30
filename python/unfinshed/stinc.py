@@ -2,6 +2,10 @@
 import re
 
 def increment_string(strng):
+    '''
+    This is a comment.
+    What do I go again?
+    '''
     re_text = '([^\d]*)(\d+)?'
     # How do we use regex? What about lookahead and lookbehinds?
     return strng.match(re_text)

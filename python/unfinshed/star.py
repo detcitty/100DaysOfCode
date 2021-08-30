@@ -14,4 +14,3 @@ def slogan_maker(array):
     together = '\r\n'.join(concat_str)
     return(together)
 
-
