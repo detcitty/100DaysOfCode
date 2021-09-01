@@ -2,5 +2,9 @@
 import numpy as np
 
 def sum_pairs(ints, s):
+    '''
+    What does this do?
+    # Does it take a function and try to add them?
+    '''
     values = np.diag(ints)
     return
