@@ -2,5 +2,12 @@
 import re
 
 def simplify(poly):
+    '''
+    What does it mean to use:
+    - lookahead
+    - lookbehind
+    - negative lookahead
+    - negative lookbehind
+    '''
     split_regex = r"[\+\-]"
     values = re.split(split_regex, poly)
