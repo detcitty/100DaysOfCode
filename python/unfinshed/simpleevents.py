@@ -3,9 +3,15 @@
 class Event():
 
     def __init__():
+        '''
+        What does this mean?
+        '''
         self.event = 'event'
 
     def fix(self, values):
+        '''
+        How else do we work for these class functions?
+        '''
         self.values = values;
         fix=' '.join(self.values)
         return(fix)
