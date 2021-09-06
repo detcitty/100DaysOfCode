@@ -2,7 +2,8 @@
 
 def flip(d, a):
     '''
-    What does this even do?
+    Aligning squares to either left or right wall,
+    in descending or ascending order.
     '''
     # Do some magic
     sort_left = True if d == "L" else False
