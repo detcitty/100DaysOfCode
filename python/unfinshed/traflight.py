@@ -2,6 +2,9 @@
 
 def update_light(current):
     # Your code here
+    '''
+    What does this do?
+    '''
     final = ''
 
     if current == 'green':
