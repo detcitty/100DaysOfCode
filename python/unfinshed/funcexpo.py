@@ -2,5 +2,10 @@
 
 def expand(x, digit):
     # your code
+    '''
+    What does this do?
+
+    How to use functions.
+    '''
     return
 
