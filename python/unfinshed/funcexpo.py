@@ -7,5 +7,5 @@ def expand(x, digit):
 
     How to use functions.
     '''
-    return
+    return(x**digit)
 
