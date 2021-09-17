@@ -2,4 +2,5 @@
 
 def infected(s):
     str_s = list(s)
-    return(str_s)
+    xx_ = list(map(lambda x: x.upper()))
+    return(xx_)
