@@ -4,5 +4,5 @@ import re
 
 def valid_number(n):
     regex_patt = r'[\-\+]?[0-9]+\.[0-9]{2}'
-    value = re.match(regex_patt, str(s))
-    pass
+    value = re.match(regex_patt, str(n))
+    return(bool(value))
