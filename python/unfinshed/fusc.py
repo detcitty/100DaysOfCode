@@ -11,4 +11,6 @@ def fusc(n):
     elif(n % 2 == 0):
         return(fusc(n))
     else:
-        return(fusc(n) + fusc(n+1))
+        return(fusc(n-1) + fusc(n))
+
+test1 = fusc(3)
