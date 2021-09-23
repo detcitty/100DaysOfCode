@@ -33,4 +33,4 @@ def decode(cards):
     'q' : 11,
     'k' : 12
     }
-    return
+    return("HELP")
