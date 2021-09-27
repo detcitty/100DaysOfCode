@@ -5,3 +5,8 @@ def encode_resistor_colors(ohms_string):
     What are resistors?
     '''
     # your code here
+
+    power = {
+        '1' : 'test',
+        '2' : 'test1'
+    }
