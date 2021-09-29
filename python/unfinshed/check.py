@@ -5,10 +5,10 @@ def check_exam(arr1,arr2):
     for i in range(len(arr1)):
         if arr1[i] == arr2[i]:
             score += 4
-        if arr1[i] == "":
+        elif arr2[i] == "":
             score += 0
         else:
             score -=1
-    return(score)
+    return(score if score < 0 else score)
             
   
