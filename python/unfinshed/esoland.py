@@ -2,6 +2,9 @@
 
 def interpreter(tape):
     # Your code here
+    '''
+    My stomache hurts
+    '''
     file_map = {}
 
     for x in list(tape):
