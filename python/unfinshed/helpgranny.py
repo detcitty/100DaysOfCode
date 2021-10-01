@@ -4,4 +4,5 @@ def tour(friends, friend_towns, home_to_town_distances):
     '''
     help  
     '''
+    friends == friend_towns 
     return 0
