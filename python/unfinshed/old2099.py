@@ -2,3 +2,4 @@
 
 def calculate_age(year_of_birth, current_year):
     #your code here
+    return(current_year-year_of_birth)
