@@ -3,7 +3,9 @@
 def moving_shift(s, shift):
     words = s.split(" ")
     function_ = shift(s)
+    retturn(function_)
 
 def demoving_shift(s, shift):
     words = s.split(" ")
     function_ = shift(s)
+    return(function_)
