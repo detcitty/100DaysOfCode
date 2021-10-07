@@ -5,6 +5,8 @@ def solve(a, b, c, alpha, beta, gamma):
     '''
     This looks like the diff function
     How would I write this function?
+    
+    What do I do for this kind of work?
     '''
     y = m * x + b
     print(y)
