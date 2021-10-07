@@ -2,7 +2,7 @@
 
 def multi_table(number):
     final_string = ''
-    for i in range(1, number):
+    for i in range(1, 11):
         final_string += "{} * {} = {}".format(i, number, i*number) + '\n'
-    return(final_string)
+    return(final_string.strip())
 
