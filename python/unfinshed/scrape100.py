@@ -5,6 +5,10 @@ from bs4 import BeautifulSoup
 URL = 'https://www.codewars.com/users/leaderboard'
 
 class Leaderboard:
+    '''
+    This needs to be worked on.
+    Do I know how to do classes in python?
+    '''
     pass
 
 class User(Leaderboard):
