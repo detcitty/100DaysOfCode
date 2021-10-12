@@ -12,6 +12,9 @@ class Leaderboard:
     pass
 
 class User(Leaderboard):
+    '''
+    Help me become better
+    '''
     pass
 
 def solution():
