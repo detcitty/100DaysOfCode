@@ -4,6 +4,8 @@ def interpreter(tape):
     # Your code here
     '''
     My stomache hurts
+    and i am getting chubby  
+    do work
     '''
     file_map = {}
 
