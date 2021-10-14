@@ -8,5 +8,8 @@ def memoize_help(n):
 	return(list)
 
 def sum_dif_rev(n):
+	'''
+	How can this be helpful to those who wait? 
+	'''
 	#your code here
 	return x # n-th term of the sequence
