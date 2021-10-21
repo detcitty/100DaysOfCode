@@ -4,6 +4,9 @@ import regex as re
 
 def encode_str(strng, shift):
     # your code
+    '''
+    How can I handle code? 
+    '''
     char_regex = r"[A-Za-z]"
 
 def decode(arr):
