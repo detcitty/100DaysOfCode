@@ -1,3 +1,7 @@
+'''
+i wish i was better at math problems 
+'''
+
 import numpy as np
 
 end_ = 600851475143
