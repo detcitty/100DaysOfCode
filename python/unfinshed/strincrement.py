@@ -10,7 +10,7 @@ def increment_string(strng):
         #print(str_index)
         num = int(match_bool.group()) + 1
         num_str = str(num)
-        num_lead = num_str.zfill(len(match_bool.group())-len(num_str))
+        num_lead = num_str.zfill(len(match_bool.group())+1-len(num_str))
 
         final_value = strng[:str_index[0]] + num_lead
 
@@ -18,5 +18,5 @@ def increment_string(strng):
         final_value = strng + '1'
     return(final_value)
 
-test1 = increment_string('foo0003')
+test1 = increment_string('foo3')
 print(test1)
