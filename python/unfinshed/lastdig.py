@@ -3,3 +3,6 @@
 def solution(n,d):
     digits = list(map(lambda x: int(n), list(str(n))))
     return(digits[:d])
+
+test1 = solution(123767,4)
+print(test1)
