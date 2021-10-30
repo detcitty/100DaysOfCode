@@ -4,6 +4,8 @@ def even(list_):
     return(list_ % 2 == 0)
 
 def even_numbers(arr,n):
-    'Help me' 
+    '''Help me
+    What is my phone doing? Ugh
+    ''' 
     pass
     
