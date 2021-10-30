@@ -1,5 +1,8 @@
 '''
 i wish i was better at math problems 
+i hipe i can solve
+
+use a generator 
 '''
 
 import numpy as np
