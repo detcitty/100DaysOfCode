@@ -2,4 +2,5 @@
 
 def sum_triangular_numbers(n):
     #your code here
+    list(map(lambda x: sum(x), n))
     return sum_
