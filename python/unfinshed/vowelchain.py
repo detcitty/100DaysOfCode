@@ -2,5 +2,5 @@
 import re
 
 def solve(s):
-    r'a|e|i|o|u'
-    pass
+    regex1 = r'a|e|i|o|u'
+    return(re.match(regex1, s))
