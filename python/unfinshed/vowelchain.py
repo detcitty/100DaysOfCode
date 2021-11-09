@@ -2,5 +2,9 @@
 import re
 
 def solve(s):
+    '''
+    How do we solve these regular expressions?
+    What about coding?
+    '''
     regex1 = r'a|e|i|o|u'
     return(re.match(regex1, s))
