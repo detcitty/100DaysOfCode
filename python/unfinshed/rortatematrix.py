@@ -2,7 +2,12 @@
 
 def rotate(matrix, direction): 
     # your code here
-    
+    coodinates = []
+    for x in range(len(matrix)):
+        for y in range(len(matrix)):
+            coodinates.append((x,y))
+
     ## case for even-even rows
+
 
     ## case for odd-odd rows
