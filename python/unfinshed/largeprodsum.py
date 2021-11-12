@@ -4,10 +4,18 @@ import numpy as np
 def sum_or_product(array, n):
     a = np.array(array)
     a_sorted = np.argsort(a)
-    potential_prod = a_sorted[:n]
-    potenial_sum = a_sorted[:-n]
+    potential_prod = a[a_sorted][:n]
+    potenial_sum = a[a_sorted][-n:]
 
     prod = np.prod(potential_prod)
     sums = np.sum(potenial_sum)
 
-    return('Product' if prod > sums else 'Sum')
+    value = ''
+    if prod > sums:
+        value = 'product'
+    elif prod < sums:
+        value = 'sums'
+    else:
+        value = 'same'
+
+    return(value)
