@@ -1,13 +1,14 @@
 # https://www.codewars.com/kata/525a566985a9a47bc8000670/train/python
+from statistics import median
 
 def rotate(matrix, direction): 
     # your code here
-    coodinates = []
+    coorindates = []
+
+    size = len(matrix)
+    halfway = median(range(len(matrix)))
+    ## case for even-even rows
     for x in range(len(matrix)):
         for y in range(len(matrix)):
-            coodinates.append((x,y))
-
-    ## case for even-even rows
-
-
-    ## case for odd-odd rows
+            coorindates.append([x-halfway, y-halfway])
+    print(coorindates)
