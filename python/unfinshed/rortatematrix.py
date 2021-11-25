@@ -26,3 +26,8 @@ def rotate(matrix, direction):
                 row_.append([sign_x * (x_ciel_abs), sign_y * (y_ciel_abs)])
         coorindates.append(row_)
     print(coorindates)
+
+    if (direction == 'left'):
+        for i in range(len(matrix)):
+            first_ = coorindates[i]
+            x_changed = map(lambda x: [-1*x[0], x[1]], first_)
