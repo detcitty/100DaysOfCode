@@ -3,6 +3,9 @@
 import re
 
 def increment_string(strng):
+    '''
+    What does this do?
+    '''
     final_value = ''
     match_bool = re.search(r'\d+', strng)
     if match_bool:
