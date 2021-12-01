@@ -17,7 +17,22 @@ def number2words(n):
 
     numbers_list = list(map(lambda x : numbers[x], list(str(n))))
     #print(numbers_list)
-    return(numbers_list)
 
-test1 = number2words(1001)
+
+    number_placement = {
+        0 : 'one',
+        1 : 'ten',
+        2 : 'hundred',
+        3 : 'one thousand',
+        4 : 'ten thousand',
+        5 : 'hundred thousand'
+    }
+    numbers_with_placement = []
+    for index, value in enumerate(numbers_list):
+        joined = f'{value}:{number_placement[len(numbers_list)-index-1]}'
+        numbers_with_placement.append(joined)
+    
+    return(numbers_with_placement)
+
+test1 = number2words(10001)
 print(test1)
