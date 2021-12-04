@@ -2,4 +2,4 @@
 
 def remainder(a,b):
     #your code here
-    return(a%b if b != 0 else None)
+    return(max(a, b)%min(b, a) if min(b,a) != 0 else None)
