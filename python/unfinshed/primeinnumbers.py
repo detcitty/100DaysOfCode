@@ -2,6 +2,9 @@
 
 def find_next_prime(n):
     
+    return()
 
 def prime_factors(n):
-    ...
+    list_of_primes = []
+
+    found_prime = find_next_prime(n)
