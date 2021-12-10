@@ -7,3 +7,10 @@ All of this is related to functional programming
 
 def curry_partial(f,*initial_args):
     "Curries and partially applies the initial arguments to the function"
+    return_func = lambda x, y: x + y
+
+    for arg in initial_args:
+        recursive_func = lambda x, y: x + y
+
+        return_func = return_func(f(arg), recursive_func)
+    return(return_func)
