@@ -3,6 +3,9 @@ import numpy as np
 
 def decompose(n):
     # your code
+    '''
+    Try subtracting the number.
+    '''
     numbers = np.arrange(10)
     ones = np.zeros(10) + 1
     return
