@@ -35,6 +35,8 @@ class SnakesLadders():
 
     def __init__(self):
         # Code Here
+        pass
 
     def play(self, die1, die2):
         # Code Here
+        return()
