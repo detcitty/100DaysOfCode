@@ -32,9 +32,10 @@ def factorize_number(num):
         if(test_num % diversor != 0):
             diversor += 1
     print(found_numbers)
+    print(np.prod(found_numbers))
     return(found_numbers[-1])
 
-test2 = factorize_number(20)
+test2 = factorize_number(600851475143)
 print(test2)
 
 def start(number):    
