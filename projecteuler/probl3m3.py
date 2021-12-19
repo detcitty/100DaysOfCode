@@ -11,6 +11,15 @@ I think I can solve this problem if I understand what prime numbers are
 '''
 
 import numpy as np
+import math
+
+# https://stackoverflow.com/questions/36095518/get-prime-numbers-from-numpy-array/36095942
+
+def is_prime(n):
+    if n % 2 == 0 and n > 2: 
+        return False
+    return all(n % i for i in range(3, int(math.sqrt(n)) + 1, 2))
+
 
 def start(number):    
     '''
