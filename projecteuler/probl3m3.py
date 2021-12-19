@@ -20,6 +20,9 @@ def is_prime(n):
         return False
     return all(n % i for i in range(3, int(math.sqrt(n)) + 1, 2))
 
+def factorize_number(num):
+    pass
+
 
 def start(number):    
     '''
