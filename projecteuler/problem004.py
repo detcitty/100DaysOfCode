@@ -12,3 +12,6 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 
 import numpy as np
 import math
+
+test_values = np.array(list(range(900, 999)))
+print(test_values * 997)
