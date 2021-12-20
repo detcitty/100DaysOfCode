@@ -17,10 +17,19 @@ def find_palindrome(np_value):
     num_str = str(np_value)
     len_str = len(num_str)
     num_array = list(num_str)
+    value = False
+    for i in range(int(len_str/2)):
+        print(i)
+        if num_array[i] != num_array[i-1]:
+            print("F")
+            break
+        elif i == int(len_str/2) - 1:
+            value = True
+        else:
+            pass
+    return(value)
 
-    for i in range(len_str):
-        i
-    
+print(find_palindrome(9889))
 
 test_values = np.array(list(range(900, 999)))
-print(test_values * 997)
+#print(test_values * 997)
