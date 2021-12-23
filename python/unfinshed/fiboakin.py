@@ -11,6 +11,9 @@ u[19] = 11, u[20] = 12, u[21] = 12, u[22] = 12, u[23] = 12 etc...
 '''
 
 def u(nu):
+    '''
+    How to help with these issues?
+    '''
     pass
 
 def length_sup_u_k(n, k):
