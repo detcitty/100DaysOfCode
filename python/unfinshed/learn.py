@@ -3,6 +3,6 @@
 # class Machine:
     def command(self, cmd, num):
         return map(cmd(num))
+    
     def response(self,res):
         return(res)
-

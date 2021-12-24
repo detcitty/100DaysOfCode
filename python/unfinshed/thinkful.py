@@ -11,11 +11,11 @@ def fillable(stock, merch, n):
     '''
     final_price = ''
     if merch in stock.keys():
-    	available = stock[merch] 
-    	if available >= n:
-    		final_price = True
-    	else:
-    		final_price = False
+        available = stock[merch] 
+        if available >= n:
+            final_price = True
+        else:
+            final_price = False
     else:
-    	final_price = False
+        final_price = False
     return(final_price)
