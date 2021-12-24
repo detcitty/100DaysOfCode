@@ -8,6 +8,8 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 
 999*999 = 998001
 999*998 = 997002
+
+Help in the days
 '''
 
 import numpy as np
