@@ -6,6 +6,7 @@ def expand(x, digit):
     What does this do?
 
     How to use functions.
+    i dont know
     '''
     return(x**digit)
 
