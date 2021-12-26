@@ -15,6 +15,9 @@ Help in the days
 import numpy as np
 import math
 
+def find_pal(np_value):
+    pass
+
 def find_palindrome(np_value):
     num_str = str(np_value)
     len_str = len(num_str)
