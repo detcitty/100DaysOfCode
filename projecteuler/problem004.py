@@ -16,6 +16,9 @@ import numpy as np
 import math
 
 def find_pal(np_value):
+    '''
+    What do I do with this function?
+    '''
     pass
 
 def find_palindrome(np_value):
