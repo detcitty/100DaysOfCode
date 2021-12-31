@@ -8,7 +8,10 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 
 999*999 = 998001
 999*998 = 997002
-
+..
+...
+..
+100*100 = 100000
 Help in the days
 '''
 
@@ -19,6 +22,7 @@ def find_pal(np_value):
     '''
     What do I do with this function?
     '''
+
     pass
 
 def find_palindrome(np_value):
