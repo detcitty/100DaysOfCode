@@ -2,3 +2,8 @@
 
 def longest(a1, a2):
     # your code
+    a1_l = list(a1)
+    a2_l = list(a2)
+
+    a1_l.sort(reverse=False)
+    a2_l.sort(reverse=False)
