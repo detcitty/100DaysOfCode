@@ -7,8 +7,11 @@ def longest(a1, a2):
 
     a1_l.sort(reverse=False)
     a2_l.sort(reverse=False)
-    print(a2_l)
-    return()
+    #print(a2_l)
+
+    list3 = list(set(a1_l + a2_l))
+    list3.sort(reverse=False)
+    return(''.join(list3))
 
 test1 = longest("aretheyhere", "yestheyarehere")
 print(test1)
