@@ -16,8 +16,14 @@ P will be sorted by increasing order of the prime numbers. The final result has 
 def sum_for_list(lst):
 
     npl = np.array(lst)
+    
+    for i in lst:
+        a_value = np.arange(1, i+1)
+        test = i % a_value
+        print(a_value)
     values = list(map(lambda x: list(sympy.sieve.primerange(1,x)), lst))
     print(values)
     pass
+
 a = [12, 15]
 test1 = sum_for_list(a)
