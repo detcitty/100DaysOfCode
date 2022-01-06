@@ -2,7 +2,12 @@
 import numpy as np
 
 def solve(arr):
-    print(np.unique(arr, return_index=True))
+    np_return_arr = np.unique(arr, return_inverse=True)
+    np_arr = np_return_arr[0]
+    np_idx = np_return_arr[1]
+    # Get the last value, similar to LIFO
+    print(np_idx)
+    print(np_return_arr)
     return(list(set(arr)))
 
 test1 = solve([3,4,4,3,6,3])
