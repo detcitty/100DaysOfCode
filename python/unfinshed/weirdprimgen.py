@@ -18,6 +18,8 @@ Removing the 1s gives a third sequence: p: 5, 3, 11, 3, 23, 3... where you can s
 '''
 def count_ones(n):
     # your code
+    # Help is one the way
+    test = sympy.gcd(6, 8)
     pass
 
 def max_pn(n):
