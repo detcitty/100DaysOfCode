@@ -1,5 +1,8 @@
 # https://www.codewars.com/kata/55dd5386575839a74f0000a9/train/python
-
+'''
+I don't know how classes work.
+But I can try to fix it or work on it sometime
+'''
 class Node(object):
     def __init__(self, data=None):
         self.data = data
