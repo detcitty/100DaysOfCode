@@ -1,5 +1,9 @@
 # https://www.codewars.com/kata/52724507b149fa120600031d/train/python
 
+'''
+I don't know what this does. I think it can be hard to edit
+'''
+
 def number2words(n):
     """ works for numbers between 0 and 999999 """
     map_numbers = {
