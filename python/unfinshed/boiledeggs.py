@@ -10,6 +10,9 @@ def cooking_time(eggs):
     number_pots = eggs // 8
     remainding_eggs = eggs % 8
 
+    '''
+    Do it
+    '''
     total_time = number_pots * 5
     time_leftover_eggs = 5 if remainding_eggs > 0 else 0
     return(total_time + time_leftover_eggs)
