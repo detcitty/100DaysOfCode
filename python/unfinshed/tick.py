@@ -1,5 +1,9 @@
 # https://www.codewars.com/kata/587edac2bdf76ea23500011a/train/python
 
+'''
+How can I become better?
+'''
+
 def interpreter(tape):
     # Your code here
     values = tape.split()
