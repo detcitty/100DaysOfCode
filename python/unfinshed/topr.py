@@ -20,3 +20,12 @@ def id_best_users(*args):
     # your code here
     values = pd.read_data(args)
     return [[]]
+
+
+a1 = ['A042', 'B004', 'A025', 'A042', 'C025']
+a2 = ['B009', 'B040', 'B004', 'A042', 'A025', 'A042']
+a3 = ['A042', 'B004', 'A025', 'A042', 'C025', 'B009', 'B040', 'B004', 'A042', 'A025', 'A042']
+a4 = ['A042', 'A025', 'B004']
+
+test_values = id_best_users(a1, a2, a3, a4)
+exact_values = [[9, ['A042']], [5, ['A025', 'B004']]]
