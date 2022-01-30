@@ -15,10 +15,14 @@ present in all the arrays). e.g.:
 '''
 
 import pandas as pd
-
+from collections import Counter
 def id_best_users(*args):
     # your code here
-    values = pd.read_data(args)
+    # How does one work with multiple arguments?
+    # https://stackoverflow.com/questions/3496518/using-a-dictionary-to-count-the-items-in-a-list
+    
+    for ag in args:
+        values = Counter(ag)
     return [[]]
 
 
