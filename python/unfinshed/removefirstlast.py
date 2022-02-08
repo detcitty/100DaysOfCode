@@ -2,5 +2,5 @@
 
 def remove_char(s):
     #your code here
-    test = list(s).pop[0].pop(-1)
+    test = list(s).pop(0).pop(-1)
     return(test)
