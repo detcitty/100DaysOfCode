@@ -12,10 +12,10 @@ def rps(p1, p2):
     elif p1 == 'rock' and p2 == 'scissors':
         return_value = 'Player 1 won!'
     elif p1 == 'rock' and p2 == 'paper':
-        return_value = 'Player 1 won!'
-    elif p1 == 'paper' and p2 == 'scissors':
-        return_value = 'Player 1 won!'
-    elif p1 == 'paper' and p2 == 'rock':
         return_value = 'Player 2 won!'
+    elif p1 == 'paper' and p2 == 'scissors':
+        return_value = 'Player 2 won!'
+    elif p1 == 'paper' and p2 == 'rock':
+        return_value = 'Player 1 won!'
     return(return_value)
         
