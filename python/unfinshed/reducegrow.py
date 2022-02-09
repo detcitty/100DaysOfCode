@@ -6,9 +6,15 @@ def grow(arr):
     return the result of multiplying the values 
     together in order. Example:
     '''
-    return(np.multiply(np.array(arr)))
+    np_array = np.array(arr)
+    product = np.multiply(np_array)
+    print(product)
+    return()
 
 
+test1 = grow([1, 2, 3])
+print(test1)
+'''
 import codewars_test as test
 from solution import grow
 
@@ -24,3 +30,4 @@ def fixed_tests():
         
         for exp, inp in tests:
             test.assert_equals(grow(inp), exp)
+'''
