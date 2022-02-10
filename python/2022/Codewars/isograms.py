@@ -2,6 +2,9 @@
 
 def is_isogram(string):
     #your code here
+    '''
+    What does this even do?
+    '''
     tests = list(string).sort()
 
     for i in range(len(tests)):
