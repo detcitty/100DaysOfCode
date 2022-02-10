@@ -2,5 +2,9 @@
 
 def decode(strng):
     #your code here
-    orignal = [[1, 2, 3], [4, 5, 6], [7, 8, 9], ['', 0, '']]
-    shifted = [[]]
+    orignal = [1, 2, 3, 4, 5, 6, 7, 8, 9, '', 0, '']
+    shifted = [9, 8, 7, 6, 0, 4, 3, 2, 1, '', 5, '']
+    combinded = list(zip(orignal, shifted))
+    print(combinded)
+
+print(decode('test'))
