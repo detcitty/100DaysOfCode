@@ -14,5 +14,13 @@ def is_valid_walk(walk):
         'n' : 1,
         's' : -1
     }
+
+    for e in walk:
+        if e in ['n', 's']:
+            position[1] += walk_dict[e]
+        elif e in ['e', 'w']:
+            position[0] += walk_dict[e]
+        else:
+            pass
     
-    return(help)
+    return(True if (position == [0, 0] and len(walk) == 10) else False)
