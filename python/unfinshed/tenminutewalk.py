@@ -3,6 +3,16 @@
 def is_valid_walk(walk):
     #determine if walk is valid
     '''
-    
+    What will the new coordinate be?
     '''
-    pass
+    position = [0, 0]
+    # x +- 1: East and West
+    # y +- 1: North and South
+    walk_dict = {
+        'e' : 1,
+        'w' : -1,
+        'n' : 1,
+        's' : -1
+    }
+    
+    return(help)
