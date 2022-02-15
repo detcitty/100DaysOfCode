@@ -11,4 +11,5 @@ def series_sum(n):
     f(n) --> 1 /(1+n*3)
     '''
 
-    list(map(lambda n: 1/(1+n*3)))
+    values = list(map(lambda n: 1/(1+n*3), range(0, n+1)))
+    return(sum(values))
