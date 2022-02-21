@@ -5,6 +5,6 @@
 *.html
 *.DS_Store
 *.pdf
-.ipynb_checkpoints
+*.ipynb_checkpoints
 *.pyc
 default.profraw
