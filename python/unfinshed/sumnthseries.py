@@ -12,4 +12,6 @@ def series_sum(n):
     '''
 
     values = list(map(lambda n: 1/(1+n*3), range(0, n+1)))
+    #This is a test
+    
     return(sum(values))
