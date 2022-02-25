@@ -8,5 +8,8 @@ Count the numbers of digits d used in the writing of all the k**2.
 
 Call nb_dig (or nbDig or ...) the function taking n and d as parameters and returning this count.
 '''
+import numpy as np
+
 def nb_dig(n, d):
     # your code
+    values = np.arange(0, n+1)
