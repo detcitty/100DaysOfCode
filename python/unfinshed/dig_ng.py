@@ -13,3 +13,4 @@ import numpy as np
 def nb_dig(n, d):
     # your code
     values = np.arange(0, n+1)
+    k_squared = np.square(values)
