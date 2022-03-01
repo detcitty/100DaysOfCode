@@ -20,4 +20,6 @@ def nb_dig(n, d):
     print(count_d)
     return(np.count_nonzero(count_d))
 
+# Something is not working right.
+# How can I do an apply on all of the numbers?
 test1 = nb_dig(5750, 0)
