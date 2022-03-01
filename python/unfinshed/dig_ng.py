@@ -17,6 +17,7 @@ def nb_dig(n, d):
     # I just need to check if there is at least one digit d in the k**2 list
     str_k = np.array(map(str, k_squared))
     count_d = np.char.count(str_k, str(d))
+    print(count_d)
     return(np.count_nonzero(count_d))
 
 test1 = nb_dig(5750, 0)
