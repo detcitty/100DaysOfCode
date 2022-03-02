@@ -6,3 +6,13 @@ def to_alternating_case(string):
     values = list(map(lambda x: x.isupper(), all_letters))
 
     letters_key_pair = zip(all_letters, values)
+
+    final_string = ''
+
+    for letter, isLetterUpper in enumerate(letters_key_pair):
+        if isLetterUpper:
+            final_string += letter.lower()
+        else:
+            final_string += letter.upper()
+
+    return(final_string)
