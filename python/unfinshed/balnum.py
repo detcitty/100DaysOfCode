@@ -13,6 +13,7 @@ def balanced_num(number):
         
         middle.append(len(number)/ 2)
         middle.append(len(number) / 2 - 1)
+        middle.append("")
 
     return(middle)
 
