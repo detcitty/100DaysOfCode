@@ -3,9 +3,15 @@
 def reverse_words(text):
     #go for it
     new_str = ''
-    list_text = list(text)
+    words = text.split(" ")
 
-    while len(list_text) > 0:
-        new_str += list_text.pop(-1)
+    for w in words:
+            
+        list_text = list(w)
 
-    return(new_str)
+        while len(list_text) > 0:
+            new_str += list_text.pop(-1)
+        
+        new_str += " "
+
+    return(new_str.strip())
