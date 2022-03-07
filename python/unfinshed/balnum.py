@@ -2,6 +2,7 @@
 '''
 What does this even do? 
 Should I write psudo-code for these more complicated ones
+This is a test
 '''
 def balanced_num(number):
     is_odd = True if number % 2 == 1 else False
@@ -12,6 +13,7 @@ def balanced_num(number):
         
         middle.append(len(number)/ 2)
         middle.append(len(number) / 2 - 1)
+        middle.append("")
 
     return(middle)
 

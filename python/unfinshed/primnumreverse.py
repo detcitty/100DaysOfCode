@@ -1,5 +1,7 @@
 # https://www.codewars.com/kata/55ea170313b76622b3000014/train/python
-
+'''
+How do I break this up into smaller parts?
+'''
 
 def find_divide_mod(value, step):
     divide_ = value / step
