@@ -5,7 +5,7 @@ def reverse_words(text):
     new_str = ''
     list_text = list(text)
 
-    while len(text) > 0:
-        new_str += text.pop(-1)
+    while len(list_text) > 0:
+        new_str += list_text.pop(-1)
 
     return(new_str)
