@@ -10,5 +10,5 @@ import re
 def order(sentence):
     # code here
     list_sentence = sentence.split(" ")
-    list(map(lambda x: re.search(r'[0-9]+', x), list_sentence))
+    help_ = list(map(lambda x: re.search(r'[0-9]+', x), list_sentence))
     return
