@@ -6,6 +6,9 @@ Note: Numbers can be from 1 to 9. So 1 will be the first word (not 0).
 If the input string is empty, return an empty string. 
 The words in the input String will only contain valid consecutive numbers.
 '''
+import re
 def order(sentence):
     # code here
+    list_sentence = sentence.split(" ")
+    list(map(lambda x: re.search(r'[0-9]+', x), list_sentence))
     return
