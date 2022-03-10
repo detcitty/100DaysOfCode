@@ -10,5 +10,8 @@ import re
 def order(sentence):
     # code here
     list_sentence = sentence.split(" ")
-    help_ = list(map(lambda x: re.search(r'[0-9]+', x), list_sentence))
-    return
+    help_ = list(map(lambda x: (re.search(r'[0-9]+', x).group(0), x), list_sentence))
+    return(help_)
+
+test1 = "4of Fo1r pe6ople g3ood th5e the2"
+print(order(test1))
