@@ -22,19 +22,20 @@ In your class, you should support the following operations, given Vector a and V
     Vector(a,b,c) # same as above
 
 '''
-import math
 
+import math
 class Vector:
     def __init__(self, x=0, y=0, z=0):
         self.x = x
         self.y = y
         self.z = z
-        self.magnitude = math.sqrt(self.x **2 + self.y**2 + self.z**2)
+        self.magnitude = math.sqrt(self.x ** 2 + self.y**2 + self.z**2)
+
     def cross(Vector):
         pass
 
     def dot(Vector):
         pass
+
     def to_tuple():
         pass
-    
