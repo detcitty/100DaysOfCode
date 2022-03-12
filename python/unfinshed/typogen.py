@@ -10,7 +10,7 @@ def scramble_words(words):
         word_indices = list(range(len(w)))
         found_indices = []
 
-        for i, chars in enumerage(w):
+        for i, chars in enumerate(w):
             alpha_regex = re.compile(r"[a-zA-Z]", flags=re.I)
             found_indices.append(i if i not in [0, len(w)-1] or alpha_regex.search(chars) else "")
 
