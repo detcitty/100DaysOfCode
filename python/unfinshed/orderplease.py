@@ -16,6 +16,7 @@ def order(sentence):
     print(help_)
     for i in sorted(help_):
         final_str += str(i)
+        
     return(test1)
 
 test1 = "4of Fo1r pe6ople g3ood th5e the2"
