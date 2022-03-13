@@ -22,9 +22,12 @@ abbreviate("elephant-rides are really fun!")
 === "e6t-r3s are r4y fun!"
 
 */
+function word_abb(word) {
+  return ("");
+}
 
 function abbreviate(string) {
   // ...
-  let sentence_split = string.split(' ');
-  
+  let sentence_split = string.split(/[\s\-]+/i);
+
 }
