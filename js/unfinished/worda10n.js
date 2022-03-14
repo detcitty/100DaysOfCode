@@ -20,8 +20,9 @@ abbreviate("elephant-rides are really fun!")
 // all non-word characters (*) remain in place
 //                     "-"      " "    " "     " "     "!"
 === "e6t-r3s are r4y fun!"
-
 */
+
+
 function word_abb(word) {
   let word_len = word.length;
   var final_word = '';
