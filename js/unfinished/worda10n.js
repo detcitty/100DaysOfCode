@@ -28,7 +28,7 @@ function word_abb(word) {
   if (word_len >= 4) {
     final_word = word;
   } else {
-    console.log("")
+    final_word = word[0] + word_len + word[-1];
   }
   return (final_word);
 }
