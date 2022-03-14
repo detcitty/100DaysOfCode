@@ -2,5 +2,13 @@
 from sympy.ntheory import factorint
 
 def decompose(n):
-    # your code
-    return []
+    # your 
+    numer, denom = n.split("/")
+    numer_int = int(numer)
+    denom_int = int(denom)
+    top_primeFactors = factorint(numer_int, multiple=True)
+    bottom_primeFactors = factorint(denom_int, multiple=True)
+    return [top_primeFactors, bottom_primeFactors]
+
+test1 = decompose("21/23")
+print(test1)
