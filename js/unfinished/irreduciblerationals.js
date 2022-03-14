@@ -10,4 +10,4 @@ let test1 = sumFracts([
     [1, 3],
     [1, 4]
 ]);
-console.log(test1);
+console.log(test1); 
