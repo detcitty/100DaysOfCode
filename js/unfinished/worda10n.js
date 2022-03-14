@@ -23,7 +23,14 @@ abbreviate("elephant-rides are really fun!")
 
 */
 function word_abb(word) {
-  return ("");
+  let word_len = word.length;
+  var final_word = '';
+  if (word_len >= 4) {
+    final_word = word;
+  } else {
+    console.log("")
+  }
+  return (final_word);
 }
 
 function abbreviate(string) {
