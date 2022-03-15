@@ -9,3 +9,6 @@ def create_class(class_name, secrets):
     class class_name:
         def __ini__():
             self.secrets = secrets
+            
+        def start():
+            return None  
