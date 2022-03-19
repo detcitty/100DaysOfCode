@@ -1,5 +1,9 @@
 // https://www.codewars.com/kata/5517fcb0236c8826940003c9/train/javascript
 
+/*
+When will it change?
+*/
+
 function sumFracts(l) {
     // your code
     let denom = l.map(x => x[1]);
