@@ -2,4 +2,10 @@
 
 function solution(n){
     // ...
+    //cieling
+    //floor
+    
+    /*
+    how do I do that in JS
+    */
   }
