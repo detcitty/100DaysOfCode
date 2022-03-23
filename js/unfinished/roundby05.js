@@ -8,4 +8,6 @@ function solution(n){
     /*
     how do I do that in JS
     */
+
+    return(Math.ceil(n), Math.floor(n))
   }
