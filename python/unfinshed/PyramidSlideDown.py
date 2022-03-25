@@ -6,10 +6,13 @@ As you can see, the longest 'slide down' is 3 + 7 + 4 + 9 = 23
 
 Your task is to write a function that takes a pyramid representation as argument and returns its' largest 'slide down'. For example:
 '''
-
+import statistics
 def longest_slide_down(pyramid):
     # TODO: write some code...
     
     # Should I make a class?
+    avg = map(lambda x: statistics.mean(x), pyramid)
+    ## What's the average of each row?
+    
     pass
 
