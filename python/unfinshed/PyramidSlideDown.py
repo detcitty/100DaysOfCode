@@ -9,4 +9,7 @@ Your task is to write a function that takes a pyramid representation as argument
 
 def longest_slide_down(pyramid):
     # TODO: write some code...
+    
+    # Should I make a class?
     pass
+
