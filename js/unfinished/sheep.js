@@ -3,8 +3,8 @@
 var countSheep = function (num){
   //your code here
   var text = '';
-  for (let i = 0; i < num; i++) {
-    text += `sheep ${i}`;
+  for (let i = 1; i < num+1; i++) {
+    text += `${i} sheep...`;
   }
   return(text);
 };
