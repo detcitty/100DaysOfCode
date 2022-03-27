@@ -2,4 +2,4 @@
 
 def get_score(n):
     # do your magic here
-    return(sum(range(1,n))*50)
+    return(sum(range(1,n+1))*50)
