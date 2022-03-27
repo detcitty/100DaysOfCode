@@ -2,8 +2,12 @@
 
 function palindrome(num) {
     //Code goes here
+    //check if num
     let len = num.length;
+    for (let i = 0; i < len / 2; i++) {
 
+    }
+    return();
 }
 
 describe("Tests", () => {
@@ -19,4 +23,4 @@ describe("Tests", () => {
     });
 });
 
-console.log()
+console.log();
