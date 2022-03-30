@@ -13,8 +13,8 @@ def longest_slide_down(pyramid):
     # TODO: write some code...
 
     # Should I make a class?
-    avg = map(lambda x: statistics.mean(x), pyramid)
-    median = map(lambda x: statistics.median(x), pyramid)
+    avg = list(map(lambda x: statistics.mean(x), pyramid))
+    median = list(map(lambda x: statistics.median(x), pyramid))
     # What's the average of each row?
     return([avg, median])
     pass
