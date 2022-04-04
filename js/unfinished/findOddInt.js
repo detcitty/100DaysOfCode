@@ -7,7 +7,7 @@ function findOdd(A) {
   //happy coding!
   let unique_values = A.filter(onlyUnique);
   let dict = {};
-  unique_values.sort()
+  unique_values.sort();
   return(unique_values);
 }
 let test1 = findOdd([20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5]);
