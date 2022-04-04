@@ -5,5 +5,9 @@ const onlyUnique = (value, index, self) => { self.indexOf(value) === index };
 
 function findOdd(A) {
   //happy coding!
-  return 0;
+  let unique_values = a.filter(onlyUnique);
+  return(unique_values)
 }
+let test1 = findOdd([20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5]);
+
+console.log(test1)
