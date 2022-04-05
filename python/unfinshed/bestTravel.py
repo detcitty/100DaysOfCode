@@ -2,6 +2,11 @@
 
 def choose_best_sum(t, k, ls):
     # your code
+    '''
+    Couldn't this be a linear algebra problem?
+    Eigenvalues?
+    I only need yes or one
+    '''
     pass
 
 xs = [100, 76, 56, 44, 89, 73, 68, 56, 64, 123, 2333, 144, 50, 132, 123, 34, 89]
