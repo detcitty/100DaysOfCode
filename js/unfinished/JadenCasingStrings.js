@@ -2,4 +2,5 @@
 
 String.prototype.toJadenCase = function () {
   //...
+  var words = this.split(' ');
 };
