@@ -3,4 +3,6 @@
 String.prototype.toJadenCase = function () {
   //...
   var words = this.split(' ');
-};
+  words.map(element => element[0].toUpperCase + element.substring(1));
+  words
+}
