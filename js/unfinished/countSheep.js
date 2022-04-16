@@ -2,4 +2,6 @@
 
 function countSheeps(arrayOfSheep) {
   // TODO May the force be with you
+  return(Math.sum(arrayOfSheep.filter(x => x > 0)))
+
 }
