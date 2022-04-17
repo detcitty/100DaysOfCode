@@ -2,5 +2,6 @@
 
 function count (string) {  
     // The function code should be here
+    string.
      return {};
   }
