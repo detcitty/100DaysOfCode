@@ -2,7 +2,7 @@
 
 function getGrade(s1, s2, s3) {
   // Code here
-  var avg_var = (s1 + s2 + s2) / 3;
+  var avg_var = (s1 + s2 + s3) / 3;
   var score = "";
 
   if (avg_var >= 90) {
