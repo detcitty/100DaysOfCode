@@ -5,7 +5,14 @@ function palindrome(num) {
     //check if num
     let len = num.length;
     for (let i = 0; i < len / 2; i++) {
+        //Help
+        if (len % 2 === 0) {
 
+        }
+        else 
+        {
+            
+        }
     }
     return();
 }

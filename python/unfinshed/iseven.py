@@ -2,4 +2,5 @@
 
 def is_even(n):
     # your code here
+    # what else? 
     return(True if n % 2 == 0 or n == 0 else False)

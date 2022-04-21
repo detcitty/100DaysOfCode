@@ -1,6 +1,7 @@
 # https://www.codewars.com/kata/52724507b149fa120600031d/train/python
 '''
 How can I make a machine learning algorithm?
+What about the power to do this in a correct way?
 '''
 def number2words(n):
     """ works for numbers between 0 and 999999 """
@@ -38,3 +39,5 @@ def number2words(n):
 
 test1 = number2words(10001)
 print(test1)
+test2  = number2words(888888) 
+print(test2)
