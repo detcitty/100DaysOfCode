@@ -7,10 +7,11 @@ function twoSum(numbers, target) {
     for (let i = 0; i < numbers.length; i++) {
 
         for (let j = 0; j < numbers.length; j++) {
-            values = numbers[i] + numbers[j];
+            var values = numbers[i] + numbers[j];
 
-            if (i == j) continue
-            else {
+            if (i == j) {
+                continue
+            } else {
                 if (values == target) {
                     index1 = i;
                     index2 = j;
