@@ -2,5 +2,4 @@
 
 function explode(s) {
   s_split = s.split('');
-  return ;
-}
+  return ();
