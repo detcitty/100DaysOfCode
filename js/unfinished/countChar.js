@@ -3,5 +3,6 @@
 function count (string) {  
     // The function code should be here
     let words_split = string.split('');
+    let words_size = words_split.length;
      return {};
   }
