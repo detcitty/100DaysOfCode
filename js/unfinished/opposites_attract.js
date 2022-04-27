@@ -2,6 +2,7 @@
 
 function lovefunc(flower1, flower2) {
   // moment of truth
+  // What is going on?
   var test = [flower1, flower2].forEach((e = e % 2));
   return test.every(Boolean);
 }
