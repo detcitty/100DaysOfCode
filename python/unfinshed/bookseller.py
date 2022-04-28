@@ -4,3 +4,5 @@ def stock_list(listOfArt, listOfCat):
     '''
     Is this similar to the Dewey Decimal System?
     '''
+    
+    return(0)
