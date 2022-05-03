@@ -9,6 +9,10 @@ Example:
 None of the arrays will be empty, so you don't have to worry about that!
 */
 
+function onlyOdd()
+
 function removeEveryOther(arr) {
   //your code here
+
+  arr.filter(  x => (y));
 }
