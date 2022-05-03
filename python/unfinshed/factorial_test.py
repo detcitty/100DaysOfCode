@@ -2,7 +2,10 @@
 
 def factorial(n):
     try:
-        some_code_that_may_raise_our_value_error()
-
+        fac = 1
+        for i in range(n):
+            fac *= i
     except ValueError as err:
         print(err.args)
+    
+    return(fac)
