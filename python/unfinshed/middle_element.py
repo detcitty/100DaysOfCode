@@ -5,4 +5,4 @@ def gimme(input_array):
     max_i, min_i = max(input_array), min(input_array)
 
     for i in range(len(input_array)):
-        
+        pass
