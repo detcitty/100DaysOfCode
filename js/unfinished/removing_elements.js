@@ -13,6 +13,6 @@ function onlyOdd()
 
 function removeEveryOther(arr) {
   //your code here
-
+  //How do I do the double arrow coding stuff?
   arr.filter(  x => (y));
 }
