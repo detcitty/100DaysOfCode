@@ -9,7 +9,9 @@ Example:
 None of the arrays will be empty, so you don't have to worry about that!
 */
 
-function onlyOdd()
+function onlyOdd(test) {
+  return(test.filter(x => x  % 2 ));
+}
 
 function removeEveryOther(arr) {
   //your code here
