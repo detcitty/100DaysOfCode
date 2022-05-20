@@ -2,6 +2,8 @@
 
 function findNeedle(haystack) {
   // your code here
-  var position = haystack.indexOf('needle') + 1;
+  //var position = haystack.indexOf('needle') + 1;
+  var position = haystack.indexOf('needle');
+
   return(`found the needle at position ${position}`)
 }
