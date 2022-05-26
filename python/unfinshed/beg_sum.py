@@ -2,5 +2,6 @@
 
 def get_sum(a,b):
     #good luck!
-    
-    pass
+    min_num = min([a, b])
+    max_num = max([a, b])
+    return(sum(range(min_num, max_num+1, 1)))
