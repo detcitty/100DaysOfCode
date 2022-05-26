@@ -2,4 +2,5 @@
 
 function hexToDec(hexString){
   //your code here
+  //16: 0-9, A-F
 }
