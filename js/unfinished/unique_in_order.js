@@ -13,4 +13,5 @@ var uniqueInOrder = function (iterable) {
   } else {
     convert_to_array = iterable;
   }
+  return onlyUnique(convert_to_array);
 };
