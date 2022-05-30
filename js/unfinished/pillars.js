@@ -11,6 +11,14 @@ Calculate the distance between the first and the last pillar in centimeters (wit
 
 function pillars(num_pill, dist, width) {
   // your code here
-  var pills = dist * num_pill + width + (num_pill - 2);
-  return(pills);
+  var pills = 0;
+  // Check for even number of pillars
+  if (num_pill % 2 == 0) {
+    pills = (width * num_pill) + (num_pill - 1) * dist;
+
+  } else { //check for odd number of pillars
+    pills = (width * num_pill) + (num_pill - 2) * dist;
+
+  }
+  return (pills);
 }
