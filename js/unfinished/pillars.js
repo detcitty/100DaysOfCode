@@ -17,10 +17,10 @@ function pillars(num_pill, dist, width) {
   var pills = 0;
   // Check for even number of pillars
   if (num_pill % 2 == 0) {
-    pills = (width * (num_pill - 1)) + (num_pill - 1) * dist_cm;
+    pills = (width * (num_pill - 2)) + ((num_pill - 1) * dist_cm);
 
   } else { //check for odd number of pillars
-    pills = (width * (num_pill - 2)) + (num_pill - 1) * dist_cm;
+    pills = (width * (num_pill - 1)) + ((num_pill - 1) * dist_cm);
 
   }
   return (pills);
