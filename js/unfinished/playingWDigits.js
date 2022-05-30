@@ -2,5 +2,6 @@
 
 function digPow(n, p){
   // ...
+  // What does this do?
   var str_digit = n.toString();
 }
