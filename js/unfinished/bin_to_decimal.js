@@ -3,4 +3,5 @@
 function binToDec(bin){
   // ...
   var split_bin = bin.split('');
+  
 }
