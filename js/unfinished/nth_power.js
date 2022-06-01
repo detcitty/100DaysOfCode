@@ -3,10 +3,10 @@
 function index(array, n) {
   //your code here
   var return_value = 0;
-  if (array.length < n - 1) {
+  if (array.length < n ) {
     return_value = -1;
   } else {
-    return_value = array[n] * array[n];
+    return_value = array[n] ** 2;
   }
 
   return return_value;
