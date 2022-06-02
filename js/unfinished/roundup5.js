@@ -15,7 +15,7 @@ etc.
 */
 function roundToNext5(n) {
   // ...
-  var quotient = Math.floor(y / 5);
-  var remainder = y % 5;
-  return(quotient * 5 + 5);
+  var quotient = Math.floor(n / 5);
+  var remainder = n % 5;
+  return(remainder == 0 ? n : quotient * 5 + 5);
 }
