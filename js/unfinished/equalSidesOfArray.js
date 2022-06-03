@@ -10,4 +10,7 @@ that would make this happen, return -1.
 
 function findEvenIndex(arr) {
   //Code goes here!
+  var num_pos = arr.filter((num) => num > 0).length;
+  var num_neg = arr.filter((num) => num < 0).length;
+  var num_zeros = arr.filter((num) => num == 0).length;
 }
