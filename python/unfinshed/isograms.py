@@ -2,18 +2,17 @@
 
 def is_isogram(string):
     #your code here
-    letters = list(string)
+    letters = list(string.lower())
     letters.remove
     not_unique = True
     
     for count, l in enumerate(letters):
-        
-        if (letters[count-1] == l):
+        if (letters[count-1]):
             not_unique = False
             break
         else:
             continue
         
-    return(not_unique)
+    return(True if len(string) == 0 else not_unique)
     
     
