@@ -3,16 +3,16 @@
 def is_isogram(string):
     #your code here
     letters = list(string.lower())
-    letters.remove
+    letters.sort()
     not_unique = True
     
     for count, l in enumerate(letters):
-        if (letters[count-1]):
+        if (letters[count-1] == l):
             not_unique = False
             break
         else:
             continue
-        
-    return(True if len(string) == 0 else not_unique)
+    
+    return(not_unique)
     
     
