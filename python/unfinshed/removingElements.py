@@ -6,6 +6,7 @@ def remove_every_other(my_list):
 
     for i, e in enumerate(my_list):
         new_list.append(e if i % 2 == 0 else "")
-    new_list = [i for i in new_list if i]
-
-    return(new_list)
+    #new_list = [i for i in new_list if i]
+    result = list(filter(lambda val: val != "", new_list))
+    
+    return(result)
