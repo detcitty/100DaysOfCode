@@ -8,5 +8,6 @@ def find_it(seq):
         tracks[e] = 0
         
     for x in seq:
-        
+        pass
+    
     return None
