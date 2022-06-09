@@ -14,5 +14,5 @@ For example(Input --> Output):
 */
 
 function howManyLightsabersDoYouOwn(name) {
-  return;
+  return(name == 'Zach' ? 18 : 0);
 }
