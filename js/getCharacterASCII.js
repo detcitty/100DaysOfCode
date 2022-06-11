@@ -6,4 +6,5 @@ For ASCII table, you can refer to http://www.asciitable.com/
 */
 function getChar(c){
   // ...
+  // what does this do again?
 }
