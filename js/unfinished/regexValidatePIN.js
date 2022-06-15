@@ -6,4 +6,6 @@ If the function is passed a valid PIN string, return true, else return false.
 */
 function validatePIN(pin) {
   //return true or false
+  const regexExp = /\b\d{4}|\d{6}\b/;
+  return(regexExp.test(pin))
 }
