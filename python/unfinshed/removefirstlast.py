@@ -3,8 +3,9 @@
 def remove_char(s):
     #your code here
     list_s = list(s)
-    removed_s = list_s.pop(0).pop(-1)
-    return(removed_s)
+    removed_s = list_s.pop(0)
+    removed_s_twice = list_s.pop(-1)
+    return(removed_s_twice)
 
 test1 = remove_char('eloquent')
 print(test1)
