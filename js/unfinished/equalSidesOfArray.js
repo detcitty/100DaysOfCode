@@ -1,0 +1,16 @@
+// https://www.codewars.com/kata/5679aa472b8f57fb8c000047/train/javascript
+
+/*
+You are going to be given an array of integers. 
+Your job is to take that array and find an index N where 
+the sum of the integers to the left of N is equal to the 
+sum of the integers to the right of N. If there is no index 
+that would make this happen, return -1.
+*/
+
+function findEvenIndex(arr) {
+  //Code goes here!
+  var num_pos = arr.filter((num) => num > 0).length;
+  var num_neg = arr.filter((num) => num < 0).length;
+  var num_zeros = arr.filter((num) => num == 0).length;
+}
