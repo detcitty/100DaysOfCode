@@ -2,4 +2,7 @@
 
 def dig_pow(n, p):
     # your code
+    # Is there an integer k such as : (a ^ p + b ^ (p+1) + c ^(p+2) + d ^ (p+3) + ...) = n * k
+
+
     return -1
