@@ -11,6 +11,7 @@ A coupon is no more valid on the day AFTER the expiration date. All dates will b
 
 def check_coupon(entered_code, correct_code, current_date, expiration_date):
     # Code here!
+    # what do I do?
     first_date = dateparser.parse(current_date)
     last_date = dateparser.parse(expiration_date)
     
