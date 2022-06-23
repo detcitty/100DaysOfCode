@@ -5,7 +5,7 @@ Determine if the sex of the offspring will be male or female based on the X or Y
 */
 function chromosomeCheck(sperm) {
     var returnv = '';
-    if (sperm = 'XY') {
+    if (sperm = 'XX') {
         returnv = "Congratulations! You're going to have a son."
     }
     else {
