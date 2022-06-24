@@ -5,44 +5,44 @@ Should I make a class?
 How do I do function division?
 '''
 
-def zero(): #your code here
+def zero(*args): #your code here
+    return(0)
+
+def one(*args): #your code here
+    return(1)
+
+def two(*args): #your code here
+    return(2)
+
+def three(*args): #your code here
+    return(3)
+
+def four(*args): #your code here
+    return(4)
+
+def five(*args): #your code here
+    return(5)
+
+def six(*args): #your code here
+    return(6)
+
+def seven(*args): #your code here
+    return(7)
+
+def eight(*args): #your code here
+    return(8)
+
+def nine(*args): #your code here
+    return(9)
+
+def plus(*args): #your code here
     pass
 
-def one(): #your code here
+def minus(*args): #your code here
     pass
 
-def two(): #your code here
+def times(*args): #your code here
     pass
 
-def three(): #your code here
-    pass
-
-def four(): #your code here
-    pass
-
-def five(): #your code here
-    pass
-
-def six(): #your code here
-    pass
-
-def seven(): #your code here
-    pass
-
-def eight(): #your code here
-    pass
-
-def nine(): #your code here
-    pass
-
-def plus(): #your code here
-    pass
-
-def minus(): #your code here
-    pass
-
-def times(): #your code here
-    pass
-
-def divided_by(): #your code here
+def divided_by(*args): #your code here
     pass
