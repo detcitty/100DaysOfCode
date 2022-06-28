@@ -8,5 +8,18 @@ Second argument (optional):
 
 '''
 def title_case(title, minor_words=''):
+    title_list = title.split(' ')
+    
+    """
+    my function
+    :param value: value for my function; default is 1
+    """
+    if minor_words is title_case.__defaults__[0]:
+        print('default')
+        #minor_words = 'The'
+    else:
+        print('passed in the call')
+    # whatever I want to do with the value
+    print(minor_words)
     pass
     
