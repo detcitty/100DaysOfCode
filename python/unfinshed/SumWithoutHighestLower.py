@@ -10,4 +10,5 @@ Mind the input validation.
 '''
 def sum_array(arr):
     #your code here
-    pass
+    return(sum(arr)- min(arr) - max(arr))
+    
