@@ -15,6 +15,21 @@ Note: anything else is the default case: if the input to the function is not any
 Make sure you cover the cases where certain words do not show up with correct capitalization. For example, the input "pOLitiCIaN" should still return "Your tax dollars".
 
 */
-function getDrinkByProfession(param){
+function getDrinkByProfession(param) {
+  const drinkTable = [
+    ["Jabroni", "Patron Tequila"],
+    ["School Counselor", "Anything with Alcohol"],
+    ["Programmer", "Hipster Craft Beer"],
+    ["Bike Gang Member", "Moonshine"],
+    ["Politician", "Your tax dollars"],
+    ["Rapper", "Cristal"],
+  ];
+  const r = drinkTable.filter(drink => drink[0] == param);
 
+  if (r.length < 1 ) {
+    return ("Beer");
+  }
+  else {
+    return(r[1])
+  }
 }
