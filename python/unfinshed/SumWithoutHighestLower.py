@@ -10,5 +10,8 @@ Mind the input validation.
 '''
 def sum_array(arr):
     #your code here
-    return(sum(arr)- min(arr) - max(arr))
+    if arr is None or len(arr) <= 1:
+        return 0
+    else:
+        return(sum(arr) - min(arr) - max(arr))
     
