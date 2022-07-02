@@ -2,4 +2,7 @@
 
 def shortcut( s ):
     # ...
-    pass
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    filtered_letters = list(filter(lambda x: x not in vowels, list(s)))
+    return(''.join(filtered_letters))
+    
