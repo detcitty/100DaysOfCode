@@ -11,4 +11,4 @@ All values will be positive integers or floats, or zero.
 
 '''
 def plural(n):
-    return True if n > 1 else False
+    return True if n > 1 or n == 0 else False
