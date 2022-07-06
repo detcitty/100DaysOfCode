@@ -7,5 +7,6 @@ function xor(a, b) {
   true xor false == true // exactly one of the two expressions are true
   false xor true == true // exactly one of the two expressions are true
   true xor true == false // Both are true.  "xor" only returns true if EXACTLY one of the two expressions evaluate to true.
+  How do I make this count?
   */
 }
