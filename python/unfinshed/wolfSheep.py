@@ -8,4 +8,5 @@ Input: ["sheep", "sheep", "wolf"]
 Output: "Pls go away and stop eating my sheep"
 '''
 def warn_the_sheep(queue):
-    pass
+    wolf_index = queue.index('wolf')
+    
