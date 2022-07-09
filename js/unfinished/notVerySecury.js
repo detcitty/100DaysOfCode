@@ -13,5 +13,5 @@ No whitespaces / underscore
 function alphanumeric(string){
   //your code here
   const regex = //;
-  return()
+  return();
 }
