@@ -7,4 +7,5 @@ Note: input will never be an empty string
 '''
 
 def fake_bin(x):
+    
     pass
