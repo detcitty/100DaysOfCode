@@ -7,8 +7,8 @@ Example(Input => Output):
 
 348597 => [7,9,5,8,4,3]
 0 => [0]
-
-
 '''
 def digitize(n):
-    return
+    numbers_split = list(map(lambda x: int(x), list(str(n))))
+
+    return numbers_split
