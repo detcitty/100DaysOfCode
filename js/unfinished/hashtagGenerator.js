@@ -15,13 +15,18 @@ Examples
 ""                                        =>  false
 */
 function generateHashtag(str) {
+  var final_value = '';
   if (!!str) {
     const words = str.trim().split(/\s+/); // Split by
     const capwords = words.map((x) => {
       `${x.substring(0, 1).toUpperCase()}${x.substring(1)}`;
     });
-    return capwords.join("");
+    final_value =  capwords.join("");
   } else {
-    return false;
+    final_value =  false;
   }
+  return(final_value)
 }
+
+const test1 = "Do We have A Hashtag";
+console.log(generateHashtag(test1));

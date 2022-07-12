@@ -11,4 +11,4 @@ Example(Input => Output):
 def digitize(n):
     numbers_split = list(map(lambda x: int(x), list(str(n))))
 
-    return numbers_split[-1:-len(numbers_split)]
+    return numbers_split[::-1]
