@@ -12,4 +12,5 @@ With list [20,37,20,21] and number 1, the result would be [20,37,21].
 
 function deleteNth(arr,n){
   // ...
+  //Not today satan.
 }

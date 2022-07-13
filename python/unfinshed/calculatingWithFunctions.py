@@ -3,6 +3,7 @@
 how do i do this again? 
 Should I make a class?
 How do I do function division?
+Add some code, maybe?
 '''
 
 def zero(*args): #your code here
