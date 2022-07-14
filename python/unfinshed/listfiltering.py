@@ -12,4 +12,5 @@ filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
 def filter_list(l):
     'return a new list with the strings filtered out'
     'How can I vew things?'
-    pass
+    return(list(filter(lambda x: type(x) is int, l)))
+    
