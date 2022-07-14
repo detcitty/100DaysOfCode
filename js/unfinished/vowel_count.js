@@ -7,9 +7,11 @@ The input string will only consist of lower case letters and/or spaces.
 */
 
 function getCount(str) {
-  let vowelsCount = 0;
-  
+  //var vowelsCount = 0;
+  const regexVowels = /[aeiou]/i;
   // enter your magic here
-  
-  return vowelsCount;
+  let vowelsCount = [...str].filter(function (value) {
+    return value.match(regexVowels);
+  });
+  return vowelsCount.length;
 }
