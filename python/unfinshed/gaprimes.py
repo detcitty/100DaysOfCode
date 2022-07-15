@@ -54,6 +54,11 @@ Ref
 https://en.wikipedia.org/wiki/Prime_gap
 
 '''
+# find the prime numbers
+
+def is_prime(num):
+    pass
+
 def gap(g, m, n):
     found_remainders = []
     for i in range(g+1):
@@ -61,3 +66,4 @@ def gap(g, m, n):
             value = abs(m - n)
             found_remainders.append(i)
     return(found_remainders)
+
