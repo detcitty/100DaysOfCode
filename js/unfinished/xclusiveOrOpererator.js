@@ -9,5 +9,12 @@ function xor(a, b) {
   true xor true == false // Both are true.  "xor" only returns true if EXACTLY one of the two expressions evaluate to true.
   How do I make this count?
   */
- return()
+  var value = null;
+
+  if (a == b) {
+    value = false;
+  } else {
+    value = true;
+  }
+  return value;
 }
