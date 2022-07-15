@@ -61,7 +61,13 @@ thirt(321) calculates 48, 48 and returns 48
 
 
 */
+
+function mod13(n) {
+    
+}
+
 function thirt(n) {
     // your code
     //What do I return?
+    const numbers = n.toString().split('')
 }

@@ -58,6 +58,7 @@ https://en.wikipedia.org/wiki/Prime_gap
 
 def is_prime(num):
     pass
+# can I build a generator to build the next prime?
 
 def gap(g, m, n):
     found_remainders = []
