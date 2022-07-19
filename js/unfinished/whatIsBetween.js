@@ -15,4 +15,9 @@ b = 4
 
 function between(a, b) {
   // your code here
+  var newArray = [];
+  for (let i = a; i <= b; i++) {
+    newArray.push(i);
+  }
+  return newArray;
 }
