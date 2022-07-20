@@ -12,6 +12,6 @@ Some cases:
 '''
 
 def multiple_of_index(arr):
-    inde = list(map(lambda x, y: x if y == 0 else x % y == 0, arr, range(len(arr))))
-    return(inde)
+    inde = list(map(lambda x, y: False if y == 0 else x % y == 0, arr, range(len(arr))))
+    return(list(map(arr.__getitem__, inde)))
     
