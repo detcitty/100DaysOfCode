@@ -19,5 +19,12 @@ Output:
     0=0
 '''
 def show_sequence(n):
-    return(sum(list(range(0, n+1))) if n > 0 else 0)
+    if n > 0:
+        numbers = list(range(0, n+1))
+        total_sum = sum(numbers)
+        return("+".join(numbers) + " = " + str(total_sum))
+    elif n == 0:
+        return("0=0")
+    else:
+        return(f"{str(n)}<0")
     
