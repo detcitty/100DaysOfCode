@@ -18,13 +18,16 @@ Input:
 Output:
     0=0
 '''
+
+
 def show_sequence(n):
     if n > 0:
         numbers = list(range(0, n+1))
         total_sum = sum(numbers)
-        return("+".join(numbers) + " = " + str(total_sum))
+        string_value = "+".join(str(v)
+                                for v in numbers) + " = " + str(total_sum)
+        return(string_value)
     elif n == 0:
         return("0=0")
     else:
         return(f"{str(n)}<0")
-    
