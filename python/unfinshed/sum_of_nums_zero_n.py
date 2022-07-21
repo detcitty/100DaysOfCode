@@ -19,4 +19,5 @@ Output:
     0=0
 '''
 def show_sequence(n):
-    pass
+    return(sum(list(range(0, n+1))) if n > 0 else 0)
+    
