@@ -38,4 +38,14 @@ Principal 'P' this should return 0 Years.
 
 function calculateYears(principal, interest, tax, desired) {
     // your code
+    var numYears = 0;
+    var yearly_total = principal
+    var counter = 0
+    while (yearly_total < desired) {
+        var earned = yearly_total * interest
+        var taxed = earned * tax
+        var yearly_total = (yearly_total + earned) - taxed
+        counter += 1
+    }
+    return(counter)
 }
