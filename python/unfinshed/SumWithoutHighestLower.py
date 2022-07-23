@@ -12,6 +12,7 @@ def sum_array(arr):
     #your code here
     # Help me?
     if arr is None or len(arr) <= 1:
+        'Test'
         return 0
     else:
         return(sum(arr) - min(arr) - max(arr))
