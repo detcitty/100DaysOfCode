@@ -23,4 +23,6 @@ For an example list of 1, 3, 5, 7
 */
 var findAverage = function (nums) {
   // Code here
+
+  //Use the reduce function to sum all the values together
 }
