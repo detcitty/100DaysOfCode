@@ -16,6 +16,7 @@ function greet(language) {
     'latvian': "Gaidits",
     'lithuanian': "Laukiamas",
     'polish': "Witamy",
+    
     'spanish': "Bienvenido",
     'swedish': "Valkommen",
     'welsh': "Croeso",
