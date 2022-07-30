@@ -20,6 +20,7 @@ function pillars(num_pill, dist, width) {
     pills = (width * (num_pill - 2)) + ((num_pill - 1) * dist_cm);
 
   } else { //check for odd number of pillars
+    //Help me sir.
     pills = (width * (num_pill - 1)) + ((num_pill - 1) * dist_cm);
 
   }
