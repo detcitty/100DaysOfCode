@@ -25,4 +25,10 @@ var findAverage = function (nums) {
   // Code here
 
   //Use the reduce function to sum all the values together
-}
+  const mean =
+    nums.reduce(
+      (previousValue, currentValue) => previousValue + currentValue,
+      0
+    ) / nums.length;
+  return mean;
+};
