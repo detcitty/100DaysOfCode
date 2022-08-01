@@ -24,7 +24,7 @@ function pipeFix(numbers) {
   var new_numbers = numbers;
   for (var i = 0; i < new_numbers.length; i++) {
     if (new_numbers[i + 1] - new_numbers[i] != 1) {
-      new_months.splice(i, 0, new_numbers[i] + 1);
+      new_numbers.splice(i, 0, new_numbers[i] + 1);
     }
   }
   return new_numbers;
