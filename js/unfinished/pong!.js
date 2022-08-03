@@ -55,7 +55,8 @@ class Pong {
   }
 
   play(ballPos, playerPos) {
-    //What does this d
+    //What does this do?
+    //How about a better code?
     return "";
   }
 }
