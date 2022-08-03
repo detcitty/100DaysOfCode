@@ -14,5 +14,18 @@ Examples(Input ==> Output)
 
 
 '''
+import math
+from re import I
+
 def is_palindrome(string):
-    pass
+    new_string = string if isinstance(string, str) else str(string)
+    is_even = True if len(new_string) % 2 == 0 else False
+    middle_value = math.floor(len(new_string) / 2)
+    
+    
+    for i in range(0, middle_value):
+        first_index = i 
+        last_index = len(new_string) - i
+        if (new_string(first_index) == new_string(last_index))
+    
+    
