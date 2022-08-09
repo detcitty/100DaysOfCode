@@ -41,31 +41,17 @@ function diamond(n) {
   } else {
     var mid_str = "";
     for (var i = 1; i <= n; i += 2) {
-      mid_str += "*".repeat(i) + "\n";
+      var level = n / 2
+      mid_str += " ".repeat(level) + "*".repeat(i) + "\n";
     }
     var reverse = mid_str.split("\n").reverse();
-    var removedElem = reverse.shift();
+    var removedElem = reverse.shift()
+    var secondElem = reverse.shift();
     var reverse_join = reverse.join("\n");
     final_return_value = mid_str + reverse_join + "\n";
   }
   return final_return_value;
 }
 
-/*
-
-// https://www.codewars.com/kata/5503013e34137eeeaa001648/train/javascript
-
-function diamond(n) {
-  var str_value = '';
-  if (n % 2 == 0 || n < 0) {
-    str_value = null;
-  } else {
-
-      for (var i = 1; i <= n ; i+=2) {
-          str_value += '*'.repeat(i) +'\n'; 
-      }
-  }
-  return str_value;
-}
-
-*/
+//Expected: ' *\n***\n *\n', instead got: '*\n***\n\n***\n*\n'
+//Expected: ' *\n***\n *\n', instead got: '*\n***\n***\n*\n'
