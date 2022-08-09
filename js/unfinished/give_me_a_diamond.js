@@ -44,9 +44,9 @@ function diamond(n) {
       mid_str += "*".repeat(i) + "\n";
     }
     var reverse = mid_str.split("\n").reverse();
-    reverse.shift();
-    reverse.join("\n");
-    final_return_value = mid_str + reverse + "\n";
+    var removedElem = reverse.shift();
+    var reverse_join = reverse.join("\n");
+    final_return_value = mid_str + reverse_join + "\n";
   }
   return final_return_value;
 }
