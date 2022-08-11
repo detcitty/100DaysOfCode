@@ -23,5 +23,13 @@ Example of a string rotated to the left by one position:
 s = "123456" gives "234561".
 */
 function revrot(str, sz) {
-    // your code
+  // your code
+  const list_a = str.split("");
+  const num_of_blocks = list_a.length / sz;
+
+  for (var i = 0; i < num_of_blocks; i++) {
+    for (var j = 0; j < sz; j++) {
+        
+    }
+  }
 }
