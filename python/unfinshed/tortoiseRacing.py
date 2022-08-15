@@ -51,6 +51,8 @@ def race(v1, v2, g):
     # Ending
     # 720 * t_1f = 70 + d_1f
     # 850 * t_2f = d_2f
+    
+    # What about the equations?
 
     relative_speed = v2 - v1
     time = g * relative_speed
