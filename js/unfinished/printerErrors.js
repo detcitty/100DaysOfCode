@@ -31,6 +31,6 @@ printer_error(s) => "8/22"
 function printerError(s) {
     // your code
     const re = /[^A-MA-m]/g;
-    const array = [...s.matchAll(re)];
+    const array = [...s.match(re)];
     return(`${array.length}/${s.length}`)
 }
