@@ -30,4 +30,7 @@ printer_error(s) => "8/22"
 */
 function printerError(s) {
     // your code
+    const re = /[^A-MA-m]/;
+    const array = [...s.matchAll(re)];
+    return("")
 }
