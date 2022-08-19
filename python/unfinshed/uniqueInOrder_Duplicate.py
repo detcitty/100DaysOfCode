@@ -12,9 +12,11 @@ unique_in_order([1,2,2,3,3])       == [1,2,3]
 '''
 import regex as re
 
+
 def unique_in_order(iterable):
-        # How do I make an iterable?
+    # How do I make an iterable?
     # I can do this.
     values = list(iterable) if isinstance(iterable, str) else iterable
+
     # check if a list
-    return(values)
+    return(set(values))
