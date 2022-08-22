@@ -17,6 +17,7 @@ def unique_in_order(iterable):
     # How do I make an iterable?
     # I can do this.
     values = list(iterable) if isinstance(iterable, str) else iterable
+    # What else?
 
     # check if a list
     return(set(values))
