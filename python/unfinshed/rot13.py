@@ -13,7 +13,16 @@ like in the original Rot13 "implementation".
 
 Please note that using encode is considered cheating.
 '''
-
+def change_character(single_letter):
+    char_number = chr(single_letter)
+    if (single_letter.islower()):
+        #stuff
+        pass
+    elif (single_letter.isupper()) :
+        # stuff
+        pass
+    else:
+        pass
 
 def rot13(message):
     values = list(map(lambda x: chr(ord(x) + 13) + (chr(x) + 93) % 13, list(message)))
