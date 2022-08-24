@@ -14,4 +14,8 @@ The parameter of accum is a string which includes only letters from a..z and A..
 # What does this do?
 def accum(s):
     # your code
-    pass
+    letters = list(s)
+    test1 = map(lambda x, y: x.lower() * y, letters, range(1, len(letters) + 1))
+    test2 = map(lambda x: x[0])
+    return("-".join(test1))
+    
