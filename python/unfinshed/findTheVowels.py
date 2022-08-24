@@ -13,7 +13,7 @@ NOTES
 Vowels in this context refers to: a e i o u y (including upper case)
 This is indexed from [1..n] (not zero indexed!)
 '''
-
+import regex as re
 
 def vowel_indices(word):
     # your code here

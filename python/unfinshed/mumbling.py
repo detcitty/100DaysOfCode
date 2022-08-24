@@ -16,6 +16,15 @@ def accum(s):
     # your code
     letters = list(s)
     test1 = map(lambda x, y: x.lower() * y, letters, range(1, len(letters) + 1))
-    test2 = map(lambda x: x[0])
-    return("-".join(test1))
+    #test2 = map(lambda x: x[0])
+    new_letters = []
+    
+    for e in test1:
+        first_letter = e[0].upper()
+        rest = e[:-1]
+        new_letters.append(first_letter + rest)
+        
+        
+        
+    return("-".join(new_letters))
     
