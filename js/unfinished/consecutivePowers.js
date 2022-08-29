@@ -29,15 +29,17 @@ output an empty list.
 Enjoy it!!
 */
 
-
 function sumDigPow(a, b) {
   // Your code here
   /*
   89 = 8^1  + 9^2
   */
+  var test = [];
   for (var i = a; i <= b; i++) {
     var nums = String(i)
       .split("")
       .map((str) => Number(str));
+    test.push(nums);
   }
+  return test;
 }
