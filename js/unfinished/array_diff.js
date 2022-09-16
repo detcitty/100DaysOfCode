@@ -17,25 +17,25 @@ function arrayDiff(a, b) {
     var new_arr = [];
 
     if (a.length != 0 || b.length != 0)
-    for (var i = 0; i < a.length; i++) {
+        for (var i = 0; i < a.length; i++) {
 
-        if (b.length > 0) {
-            for (var j = 0; j < b.length; j++) {
-                var left = a[i];
-                var right = b[j];
-                if (left != right) {
-                    new_arr.push(left);
-                } else {
-                    continue;
+            if (b.length > 0) {
+                for (var j = 0; j < b.length; j++) {
+                    var left = a[i];
+                    var right = b[j];
+                    if (left != right) {
+                        new_arr.push(left);
+                    } else {
+                        continue;
+                    }
                 }
-            }
-        } else if (a.length == 0 || b.length == 0) {
-            b.forEach(x => new_arr.push(x));
+            } else if (a.length == 0 || b.length == 0) {
+                b.forEach(x => new_arr.push(x));
 
-        } else {
-            b.forEach(x => new_arr.push(x));
+            } else {
+                b.forEach(x => new_arr.push(x));
+            }
         }
-    }
     else {
         new_arr = []
     }
