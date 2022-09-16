@@ -22,7 +22,7 @@ function arrayDiff(a, b) {
             const foundInA = a.includes(right);
             const alreadyAdded = new_arr.includes(right);
 
-            if (foundInA & !alreadyAdded) {
+            if (!foundInA & !alreadyAdded) {
                 new_arr.push(right);
             } else {
 
@@ -30,18 +30,6 @@ function arrayDiff(a, b) {
             }
 
 
-
-            /*
-            for (var j = 0; j < b.length; j++) {
-                var left = a[i];
-                var right = b[j];
-                if (left != right) {
-                    new_arr.push(left);
-                } else {
-                    continue;
-                }
-            }
-            */
         }
     } else {
         new_arr = [];
