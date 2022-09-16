@@ -17,7 +17,21 @@ function arrayDiff(a, b) {
     var new_arr = [];
 
     if (a.length != 0 || b.length != 0) {
-        for (var i = 0; i < a.length; i++) {
+        for (var i = 0; i < b.length; i++) {
+            var right = b[i];
+            const foundInA = a.includes(right);
+            const alreadyAdded = new_arr.includes(right);
+
+            if (foundInA & !alreadyAdded) {
+                new_arr.push(right);
+            } else {
+
+                continue;
+            }
+
+
+
+            /*
             for (var j = 0; j < b.length; j++) {
                 var left = a[i];
                 var right = b[j];
@@ -27,6 +41,7 @@ function arrayDiff(a, b) {
                     continue;
                 }
             }
+            */
         }
     } else {
         new_arr = [];
