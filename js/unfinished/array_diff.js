@@ -15,6 +15,8 @@ arrayDiff([1,2,2,2,3],[2]) == [1,3]
 
 function arrayDiff(a, b) {
     var new_arr = [];
+
+    if (a.length != 0 || b.length != 0)
     for (var i = 0; i < a.length; i++) {
 
         if (b.length > 0) {
@@ -27,9 +29,15 @@ function arrayDiff(a, b) {
                     continue;
                 }
             }
+        } else if (a.length == 0 || b.length == 0) {
+            b.forEach(x => new_arr.push(x));
+
         } else {
             b.forEach(x => new_arr.push(x));
         }
+    }
+    else {
+        new_arr = []
     }
 
     return (new_arr);
