@@ -20,19 +20,16 @@ function arrayDiff(a, b) {
         for (var i = 0; i < b.length; i++) {
             var right = b[i];
             const foundInA = a.includes(right);
-            const alreadyAdded = new_arr.includes(right);
-
+            const alreadyAdded = new_arr(new_arr)
             if (!foundInA & !alreadyAdded) {
                 new_arr.push(right);
             } else {
-
                 continue;
             }
-
         }
     } else {
         new_arr = [];
     }
-    let new_array_deepcopy = JSON.parse(JSON.stringify(new_arr));
-    return (new_arr);
+    var new_array_deepcopy = JSON.parse(JSON.stringify(new_arr));
+    return (new_array_deepcopy);
 }
