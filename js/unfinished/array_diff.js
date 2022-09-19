@@ -29,11 +29,10 @@ function arrayDiff(a, b) {
                 continue;
             }
 
-
         }
     } else {
         new_arr = [];
     }
-
+    let new_array_deepcopy = JSON.parse(JSON.stringify(new_arr));
     return (new_arr);
 }
