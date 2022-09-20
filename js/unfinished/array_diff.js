@@ -17,11 +17,11 @@ function arrayDiff(a, b) {
     var new_arr = [];
 
     if (a.length != 0 || b.length != 0) {
-        for (var i = 0; i < b.length; i++) {
+        for (var i = 0; i < a.length; i++) {
             var left = a[i];
             const notfoundInB = !b.includes(left);
             const alreadyAdded = new_arr.includes(left);
-            if (notfoundInB & alreadyAdded) {
+            if (notfoundInB & !alreadyAdded) {
                 new_arr.push(left);
             } else {
                 continue;
