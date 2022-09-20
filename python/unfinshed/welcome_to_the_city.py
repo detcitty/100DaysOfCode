@@ -2,4 +2,4 @@
 
 def say_hello(name, city, state):
     #your code here
-    pass
+    return(f'Hello, {" ".join(name)}! Welcome to {city}, {state}!')
