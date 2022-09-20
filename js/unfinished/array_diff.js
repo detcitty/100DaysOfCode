@@ -20,8 +20,8 @@ function arrayDiff(a, b) {
         for (var i = 0; i < a.length; i++) {
             var left = a[i];
             const notfoundInB = !b.includes(left);
-            const alreadyAdded = new_arr.includes(left);
-            if (notfoundInB & !alreadyAdded) {
+            //const alreadyAdded = new_arr.includes(left);
+            if (notfoundInB) {
                 new_arr.push(left);
             } else {
                 continue;
