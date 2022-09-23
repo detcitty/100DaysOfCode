@@ -33,3 +33,6 @@ function getDrinkByProfession(param) {
     return(r[1])
   }
 }
+
+
+getDrinkByProfession('Wrapper')
