@@ -38,4 +38,12 @@ def tribonacci(signature, n):
     #your code here
     # what does this do?
     # How will this work?
-    pass
+    changing_list = signature
+    
+    count = 0
+    while count < n - 3 :
+        new_value = changing_list[-1] + changing_list[-2] + changing_list[-3]
+        changing_list.append(new_value)
+        count += 1 
+        
+    return(changing_list)
