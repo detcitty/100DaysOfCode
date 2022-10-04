@@ -27,6 +27,7 @@ output an empty list.
 90, 100 --> []
 
 Enjoy it!!
+What to do?
 */
 
 function sumDigPow(a, b) {

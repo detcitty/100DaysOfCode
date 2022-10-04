@@ -34,8 +34,33 @@ that I really recommend to any math enthusiast and for showing me this
 mathematical curiosity too with his usual contagious passion :)]
 '''
 
+
 def tribonacci(signature, n):
-    #your code here
+    # your code here
     # what does this do?
     # How will this work?
-    pass
+    changing_list = signature
+
+    count = 0
+
+    if (n > 0):
+        if n == 1:
+            changing_list = [changing_list[0]]
+
+        elif n == 2:
+            changing_list = [changing_list[0], changing_list[1]]
+
+        elif n == 3:
+            changing_list = [changing_list[0],
+                             changing_list[1], changing_list[2]]
+
+        else:
+            while count < n - 3:
+                new_value = changing_list[-1] + \
+                    changing_list[-2] + changing_list[-3]
+                changing_list.append(new_value)
+                count += 1
+    else:
+        changing_list = []
+
+    return(changing_list)

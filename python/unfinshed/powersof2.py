@@ -9,6 +9,7 @@ n = 1  ==> [1, 2]     # [2^0, 2^1]
 n = 2  ==> [1, 2, 4]  # [2^0, 2^1, 2^2]
 What do I need to do to make this right?
 Can I make the work be doable?
+Ok
 '''
 
 def powers_of_two(n):

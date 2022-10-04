@@ -24,12 +24,15 @@ function getDrinkByProfession(param) {
     ["Politician", "Your tax dollars"],
     ["Rapper", "Cristal"],
   ];
-  const r = drinkTable.filter(drink => drink[0] == param);
+  const r = drinkTable.filter(drink => drink[0].toLowerCase() == param.toLowerCase());
 
   if (r.length < 1 ) {
     return ("Beer");
   }
   else {
-    return(r[1])
+    return(r.pop()[1])
   }
 }
+
+
+getDrinkByProfession('Wrapper')
