@@ -42,5 +42,9 @@ function sumDigPow(a, b) {
       .map((str) => Number(str));
     test.push(nums);
   }
+
+  for (var i = 0; i <= test.length; i++) {
+    test.map((str) = str**2);
+  }
   return test;
 }
