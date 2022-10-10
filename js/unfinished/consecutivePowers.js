@@ -42,9 +42,14 @@ function sumDigPow(a, b) {
       .map((str) => Number(str));
     test.push(nums);
   }
+  console.log(test)
 
   for (var i = 0; i <= test.length; i++) {
-    const new_values = test.map((str) = str**i);
+    const new_values = test.map((str) => str**i);
+    test.push(new_values)
   }
   return test;
 }
+
+const test1 = sumDigPow(1, 10)
+console.log(test1)
