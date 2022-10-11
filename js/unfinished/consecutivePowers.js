@@ -35,20 +35,20 @@ function sumDigPow(a, b) {
   /*
   89 = 8^1  + 9^2
   */
-  var test = [];
+  var split_nums = [];
   for (var i = a; i <= b; i++) {
     var nums = String(i)
       .split("")
       .map((str) => Number(str));
-    test.push(nums);
+      split_nums.push(nums);
   }
-  console.log(test)
+  console.log(split_nums)
 
-  for (var i = 0; i <= test.length; i++) {
-    const new_values = test.map((str) => str**i);
-    test.push(new_values)
+  for (var i = 0; i <= split_nums.length; i++) {
+    const new_values = split_nums.map((str) => str**i);
+    split_nums.push(new_values)
   }
-  return test;
+  return split_nums;
 }
 
 const test1 = sumDigPow(1, 10)
