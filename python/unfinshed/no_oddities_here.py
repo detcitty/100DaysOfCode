@@ -7,4 +7,4 @@ All values in the array will be integers. Return the good values in the order th
 '''
 def no_odds(values):
     # Return list of only even values
-    pass
+    return(list(filter(lambda x: x % 2 == 1, values)))
