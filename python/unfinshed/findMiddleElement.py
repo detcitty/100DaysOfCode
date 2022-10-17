@@ -28,4 +28,6 @@ from itertools import combinations
 def gimme(input_array):
     # Implement this function
     values = list(combinations(input_array, 2))
-    pass
+    
+    list(map(lambda x: x[1] < x[0], values))
+    
