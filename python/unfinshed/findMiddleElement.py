@@ -22,7 +22,10 @@ gimme([5, 10, 14]) => 1
 the input array is 1.
 
 '''
+from itertools import combinations
+
 
 def gimme(input_array):
     # Implement this function
+    values = list(combinations(input_array, 2))
     pass
