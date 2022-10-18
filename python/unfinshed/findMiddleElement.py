@@ -20,6 +20,7 @@ gimme([5, 10, 14]) => 1
 
 10 is the number that fits between 5 and 14 and the index of 10 in 
 the input array is 1.
+How do I use git in an efficient way?
 
 '''
 from itertools import combinations
@@ -29,5 +30,7 @@ def gimme(input_array):
     # Implement this function
     values = list(combinations(input_array, 2))
     
-    list(map(lambda x: x[1] < x[0], values))
+    # Insert a list comprehension
+    list(map(lambda x: [True for i in x if i < 2], values))
+    
     
