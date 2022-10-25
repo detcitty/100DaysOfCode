@@ -31,6 +31,7 @@ def gimme(input_array):
     values = list(combinations(input_array, 2))
     
     # Insert a list comprehension
+    # Honey is right?
     list(map(lambda x: [True for i in x if i < 2], values))
     
     
