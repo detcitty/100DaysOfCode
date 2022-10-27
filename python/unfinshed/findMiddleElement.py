@@ -32,6 +32,6 @@ def gimme(input_array):
     
     # Insert a list comprehension
     # Honey is right?
-    list(map(lambda x: [True for i in x if i < 2], values))
+    return list(map(lambda x: [True for i in x if i < 2], values))
     
     
