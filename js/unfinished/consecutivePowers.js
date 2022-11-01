@@ -51,5 +51,5 @@ function sumDigPow(a, b) {
   return split_nums;
 }
 
-const test1 = sumDigPow(1, 10)
+const test1 = sumDigPow(1, 15)
 console.log(test1)
