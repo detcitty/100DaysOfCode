@@ -13,4 +13,4 @@ Ok
 '''
 
 def powers_of_two(n):
-    return []
+    return(list(map(lambda x: 2**x, range(0,n+1))))
