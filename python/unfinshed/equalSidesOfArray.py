@@ -38,4 +38,8 @@ If you are given an array with multiple answers, return the lowest correct index
 '''
 def find_even_index(arr):
     #your code here
-    pass
+    total_sum = 0
+    for count, value in enumerate(arr):
+        left = sum(arr[:count])
+        right = sum(arr[count+1:])
+    
