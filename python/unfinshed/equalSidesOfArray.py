@@ -36,10 +36,20 @@ not find an index that fits these rules, then you will return -1.
 Note:
 If you are given an array with multiple answers, return the lowest correct index.
 '''
+
+
 def find_even_index(arr):
-    #your code here
-    total_sum = 0
+    # your code here
+    total_sum = -1
+    index = -1
     for count, value in enumerate(arr):
         left = sum(arr[:count])
         right = sum(arr[count+1:])
-    
+
+        if right == left:
+            total_sum = right
+            index = count
+            break
+        else:
+            continue
+    return(index)
