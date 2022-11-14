@@ -20,4 +20,6 @@ Note: base is a non-negative number, factor is a positive number.
 '''
 def check_for_factor(base, factor):
     # your code here
-    pass
+    
+    return (base % factor == 0)
+    #return(factor % base == 0)
