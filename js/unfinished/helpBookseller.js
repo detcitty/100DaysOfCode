@@ -29,6 +29,12 @@ In the result codes and their values are in the same order as in M.
 See "Samples Tests" for the return.
 
 */
-function stockList(listOfArt, listOfCat){
-  // ... 
+function stockList(listOfArt, listOfCat) {
+  // ...
+  //dict_cat = {};
+  const dict_cat = new Map(listOfCat.map((x) => [x, 0]));
+  console.log(dict_cat);
+  for (const [index, element] of listOfArt.entries()) {
+    console.log(index, element);
+  }
 }
