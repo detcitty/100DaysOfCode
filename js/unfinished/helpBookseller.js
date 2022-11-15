@@ -33,8 +33,11 @@ function stockList(listOfArt, listOfCat) {
   // ...
   //dict_cat = {};
   const dict_cat = new Map(listOfCat.map((x) => [x, 0]));
-  console.log(dict_cat);
+  //console.log(dict_cat);
   for (const [index, element] of listOfArt.entries()) {
-    console.log(index, element);
+    //console.log(index, element);
+    const firstLetter = element.split(' ');
+    dict_cat[firstLetter[0]] += element;
+
   }
 }
