@@ -7,5 +7,7 @@ contains a lowercase letter
 contains an uppercase letter
 contains a number
 Valid passwords will only be alphanumeric characters.
+
+What should I do?
 '''
 regex = r'([A-Za-z0-9]{6,}[A-Za-z0-9]{6,}[A-Za-z0-9]{6,})(?<![^A-Za-z0-9])'
