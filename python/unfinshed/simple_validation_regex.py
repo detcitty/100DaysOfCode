@@ -13,6 +13,6 @@ import regex as re
 def validate_usr(username):
     #your code here
     #pattern = r'^(?![a-z]|\d|\_).*'
-    pattern = r'([a-z\d_]){4,16}'
+    pattern = "[a-z0-9_]{4,16}"
 
-    return(True if re.match(username, pattern) else False)
+    return(False if re.match(username, pattern) else True)
