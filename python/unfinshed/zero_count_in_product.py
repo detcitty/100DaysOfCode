@@ -60,8 +60,9 @@ def zero_count(sum):
             for k in range(2, 10, 2):
                 test_sum = i + j + k
                 odd_even_even_values.append(test_sum)
-    return(set(odd_odd_even_values))
+    return(set(odd_values))
+    # return(set(even_values))
+    # return(set(odd_odd_even_values))
+    # return(set(odd_even_even_values))
 
-
-    # pass # write your code here
 print(zero_count(1))
