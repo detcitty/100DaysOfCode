@@ -20,4 +20,5 @@ For example:
 '''
 
 def goals(laLiga, copaDelRey, championsLeague):
-    return(sum(laLiga, copaDelRey, championsLeague))
+    totals = laLiga + copaDelRey + championsLeague
+    return(totals)
