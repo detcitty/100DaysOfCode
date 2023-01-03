@@ -38,13 +38,29 @@ def diamond(n):
     if n % 2 != 1 or n < 0:
         value = None
     else:
+        # what is the level?
+        level = 0
+        
         for i in range(1, n+1, 2):
+            level += 1
             
             stars = i *  "*"
+            spaces = (n- level- 1) * " "
+            #spaces = abs(n-i) * " "
             #front = value[:len(stars)]
-            value += '%s\n'%(stars)
+            
+            #REMEMBER TO INCLUDE SPACES!
+            forward = f"{spaces}{stars}\n"
+            value += forward
+            #print(value)
             #print(i, front, back)
-        reverse = value[len(value)-n-3::-1]
+        
+        referse_order = value.split("\n")
+        reverse = "\n".join(referse_order[:-1:-1])
+        #reverse = value[len(value)-n-3::-1]
         value += reverse
+        #print(level)
     
     return(value)
+
+#diamond(5)
