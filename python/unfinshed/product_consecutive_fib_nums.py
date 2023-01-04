@@ -36,7 +36,7 @@ productFib(714) # should return [21, 34, true],
 productFib(800) # should return [34, 55, false], 
 -----
 productFib(714) # should return {21, 34, 1}, 
-productFib(800) # should return {34, 55, 0},        
+productFib(800) # should return {34, 55, 0},
 -----
 productFib(714) # should return {21, 34, true}, 
 productFib(800) # should return {34, 55, false}, 
