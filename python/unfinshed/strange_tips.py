@@ -21,3 +21,4 @@ Since Nessie is a master of disguise, the only way accurately tell is to look fo
 
 def is_lock_ness_monster(string):
     #your code here
+    pass
