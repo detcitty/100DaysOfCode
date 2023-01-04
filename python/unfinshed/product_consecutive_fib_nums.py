@@ -52,6 +52,11 @@ def productFib(prod):
     while (start > 1):
         if (start % divider == 0):
             start = start / divider
+            surprise = dict_values.get(divider, 0)
+            
+            dict_values[divider] = surprise
             dict_values[divider] += 1
-    return 
+        elif (start % divider != 0):
+            divider += 1
+    return (dict_values)
     
