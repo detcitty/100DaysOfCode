@@ -36,7 +36,7 @@ productFib(714) # should return [21, 34, true],
 productFib(800) # should return [34, 55, false], 
 -----
 productFib(714) # should return {21, 34, 1}, 
-productFib(800) # should return {34, 55, 0},        
+productFib(800) # should return {34, 55, 0},
 -----
 productFib(714) # should return {21, 34, true}, 
 productFib(800) # should return {34, 55, false}, 
@@ -52,6 +52,11 @@ def productFib(prod):
     while (start > 1):
         if (start % divider == 0):
             start = start / divider
+            surprise = dict_values.get(divider, 0)
+            
+            dict_values[divider] = surprise
             dict_values[divider] += 1
-    return 
+        elif (start % divider != 0):
+            divider += 1
+    return (dict_values)
     
