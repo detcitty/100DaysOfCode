@@ -18,6 +18,11 @@ Based on: http://oj.leetcode.com/problems/two-sum/
 
 two_sum([1, 2, 3], 4) # returns [0, 2] or [2, 0]
 '''
+from itertools import combinations
 
 def two_sum(numbers, target):
-	return ()
+
+	values = list(combinations(numbers, 2))
+	totals = list(map(sum, values))
+	found = totals.index(target)
+	return(found)
