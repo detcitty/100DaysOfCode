@@ -8,19 +8,24 @@ literal, {}.
 '''
 from collections import defaultdict
 
+
 def count(string):
     # The function code should be here
     #all_chars = string.split("")
-    all_chars = list(string)
+    if len(string) != 0:
+        all_chars = list(string)
 
-    unique_chars = set(all_chars)
-    intial_dict = {}
-    counts_char = defaultdict(lambda: 0, intial_dict)
-    
-    for x in all_chars:
-        key = x
-        value = counts_char[x]
-        
-        counts_char[key] = value + 1
-        
-    return {counts_char}
+        unique_chars = set(all_chars)
+        intial_dict = dict.fromkeys(unique_chars, 0)
+        counts_char = defaultdict(lambda: 0, intial_dict)
+
+        for x in all_chars:
+            key = x
+            value = counts_char[x]
+
+            counts_char[key] = value + 1
+
+        return(counts_char)
+
+    else:
+        return({})
