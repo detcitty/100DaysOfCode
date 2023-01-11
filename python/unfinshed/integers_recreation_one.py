@@ -21,8 +21,10 @@ Note
 In Fortran - as in any other language - the returned string is not permitted to contain 
 any redundant trailing whitespace: you can use dynamically allocated character strings.
 '''
+import numpy as np
 
 def list_squared(m, n):
     # your code
-    pass
+    values = np.arange(m, n)
+    
 
