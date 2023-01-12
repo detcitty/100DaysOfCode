@@ -25,6 +25,8 @@ import numpy as np
 
 def list_squared(m, n):
     # your code
+    
     values = np.arange(m, n)
+    return(values)
     
 

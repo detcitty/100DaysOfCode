@@ -24,7 +24,17 @@ In case of an empty array return 0. You will not be tested with invalid input
 will always be the same.
 '''
 
+import regex as re
 
 def count_smileys(arr):
-    return #the number of valid smiley faces in array/list
+    if arr:
+
+        string_pattern = r'[:;][-~]?[D\)]'
+        smiley_regex = re.compile(string_pattern)
+
+        smile_flag_list = list(map(lambda x: True if re.match(smiley_regex, x) else False, arr))
+        return(sum(smile_flag_list))
+    else:
+        return(0)
+    #return #the number of valid smiley faces in array/list
 
