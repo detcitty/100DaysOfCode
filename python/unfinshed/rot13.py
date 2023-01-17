@@ -12,20 +12,28 @@ Only letters from the latin/english alphabet should be shifted,
 like in the original Rot13 "implementation".
 
 Please note that using encode is considered cheating.
+
+
 '''
+
+
 def change_character(single_letter):
     char_number = ord(single_letter)
     final_value = None
+
     if (single_letter.islower()):
-        #stuff
-        final_value = (char_number - ord('a')) % 26
-    elif (single_letter.isupper()) :
         # stuff
-        final_value = (char_number - ord('A') ) % 26
+        final_value = ((char_number - ord('a') + 13) % 26) + ord('a')
+    elif (single_letter.isupper()):
+        # stuff
+        final_value = ((char_number - ord('A') + 13) % 26) + ord('A')
     else:
-        char_number + 13
+        final_value = char_number
+    return(chr(final_value))
+
 
 def rot13(message):
-    values = list(map(lambda x: chr(ord(x) + 13) + (chr(x) + 93) % 13, list(message)))
-    print(values)
-    return(values)
+    values = list(map(change_character, list(message)))
+    #values = list(map(lambda x: chr(ord(x) + 13) + (chr(x) + 93) % 13, list(message)))
+    #print(values)
+    return(''.join(values))
