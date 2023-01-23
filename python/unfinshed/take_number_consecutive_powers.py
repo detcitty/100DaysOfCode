@@ -76,6 +76,13 @@ https://numpy.org/doc/stable/reference/generated/numpy.apply_along_axis.html
 import numpy as np
 
 
+def sum_digits(num):
+    list_numbers = np.array([int(d) for d in str(num)])
+    exponents = np.arange(1, len(list_numbers) + 1)
+    potential_sums = list_numbers * exponents
+    return(num == np.sum(potential_sums))
+    #return(np.sum(potential_sums))
+
 def sum_dig_pow(a, b): # range(a, b + 1) will be studied by the function
     # your code here
     # Can I use numpy functions?
@@ -83,4 +90,16 @@ def sum_dig_pow(a, b): # range(a, b + 1) will be studied by the function
 
     vector = np.arange(a, b+1)
 
-    return []
+    # 1^1 + 2^2 + 3^3
+
+    # 90 = 9 ^ 1 + 0 ^ 0
+    # What is 0 ^ 0
+    #[int(d) for d in str(n)]
+    mask_numbers = np.apply_along_axis(sum_digits, vector, 1)
+    values = vector[mask]
+
+    if len(values) == 0:
+        return([])
+    else:
+        return(values)
+
