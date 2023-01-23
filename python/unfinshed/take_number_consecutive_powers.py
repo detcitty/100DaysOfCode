@@ -69,8 +69,18 @@ If there are no numbers of this kind in the range
 90, 100 --> []
 Enjoy it!!
 
-
+one digit
+https://numpy.org/doc/stable/reference/generated/numpy.apply_along_axis.html
 '''
+
+import numpy as np
+
+
 def sum_dig_pow(a, b): # range(a, b + 1) will be studied by the function
     # your code here
+    # Can I use numpy functions?
+    # WHat about vectorizing information?
+
+    vector = np.arange(a, b+1)
+
     return []
