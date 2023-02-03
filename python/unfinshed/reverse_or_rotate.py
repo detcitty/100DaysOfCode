@@ -25,12 +25,19 @@ s = "123456" gives "234561".
 '''
 import math
 
+
 def rev_rot(strng, sz):
     # your code
 
     if sz <= 0 or not strng:
-         length_str = len(strng)
-         num_bins = math.floor(length_str / sz)
-         
-         endings = sz * range(1, num_bins + 1)
-         beginnings = endings - sz
+        length_str = len(strng)
+        num_bins = math.floor(length_str / sz)
+
+        endings = sz * range(1, num_bins + 1)
+        beginnings = endings - sz
+
+        for (a, b) in zip(beginnings, endings):
+            num_str = strng[a:b]
+
+    else:
+        return ("")
