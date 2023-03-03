@@ -98,4 +98,7 @@ Series:
 '''
 def sale_hotdogs(n):
     # your code here
-    pass
+    
+    values = 90 if n >= 10 else 95 if n >= 5 else 100
+    
+    return -1
