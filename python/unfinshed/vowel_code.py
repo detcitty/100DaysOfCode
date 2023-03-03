@@ -32,8 +32,9 @@ def encode(st):
 
     vowel_dict = {'a': 1, 'e': 2, 'i': 3, 'o': 4, 'u': 5}
     # [x for x in enumerate(vowel_dict)]
+    updated_str = st
     for count, (k, v) in enumerate(vowel_dict.items()):
-        re.sub(f"{v}")
+        re.sub(f"{v}", f"{k}")
     return
 
 
