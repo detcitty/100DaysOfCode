@@ -16,10 +16,14 @@ All of the strings in the array passed to your function will be different length
 
 '''
 def sort_by_length(arr):
-    dict_order = {}
+    #dict_order = {}
+    nested_list = []
     for index, ele in enumerate(arr):
         size = len(ele)
-        dict_order[index] = size
+        #dict_order[index] = size
+        #nested_list.append([index, size])
+        nested_list.append([size, index])
+    nested_list.sort()
 
-    for l, i in enumerate(dict_order.items()):
-        pass
+    final_array = list(map(lambda x: arr[x[-1]], nested_list))
+    return(final_array)
