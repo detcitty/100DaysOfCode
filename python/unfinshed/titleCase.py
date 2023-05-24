@@ -9,11 +9,13 @@ Second argument (optional):
 '''
 def title_case(title, minor_words=''):
     title_list = title.split(' ')
-    
+    title_lowercase = list(map(lambda x: x.lower(), title_list))
+    minor_words_list = [] if len(minor_words) > 0  else minor_words.split(' ')
     """
     my function
     :param value: value for my function; default is 1
     """
+
     if minor_words is title_case.__defaults__[0]:
         print('default')
         #minor_words = 'The'
