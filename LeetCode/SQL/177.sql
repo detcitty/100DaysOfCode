@@ -1,10 +1,11 @@
 --https://leetcode.com/problems/nth-highest-salary/
 
-CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
+--https://learn.microsoft.com/en-us/sql/t-sql/queries/select-order-by-clause-transact-sql?view=sql-server-ver17
+CREATE FUNCTION getNthHighestSalary(@N INT) RETURNS INT AS
 BEGIN
-  RETURN (
-      # Write your MySQL query statement below.
-      --SELECT id, salary from Employee ORDER BY salary DESC LIMIT 1 OFFSET N-1;
+    RETURN (
+        /* Write your T-SQL query statement below. */
+      SELECT DISTINCT top 1 salary FROM Employee ORDER BY salary DESC  OFFSET @N-1
 
-  );
+    );
 END
