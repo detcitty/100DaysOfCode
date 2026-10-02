@@ -1,3 +1,5 @@
+# https://www.codewars.com/kata/545a4c5a61aa4c6916000755/s
+
 def gimme(input_array):
     # Implement this function
     '''
@@ -19,7 +21,6 @@ gimme([5, 10, 14]) => 1
     min_num = min(input_array)
     max_index = input_array.index(max_num)
     min_index = input_array.index(min_num)
-    diff_index = max_index - min_index
     final_index = None
     if len(input_array) != 3:
         raise ValueError("Input array must contain exactly three distinct numbers.")
