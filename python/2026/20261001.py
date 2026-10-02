@@ -23,19 +23,18 @@ gimme([5, 10, 14]) => 1
     final_index = None
     if len(input_array) != 3:
         raise ValueError("Input array must contain exactly three distinct numbers.")
-    elif min_num < 0:
-        if max_index == 1 and min_index == 2:
-            final_index = 0
-        elif max_index == 0 and min_index == 0:
-            final_index = 2
-        elif max_index == 2 and min_index == 0:
-            final_index =  1 
-    elif min_num > 0:
-        elif max_index == 1 and min_index == 2:
-            final_index =  0
-        elif max_index == 0 and min_index == 0:
-            final_index = 2
-        elif max_index == 2 and min_index == 0:
-            final_index = 1
-        
 
+    if max_index == 1 and min_index == 2:
+        final_index = 0
+    elif max_index == 1 and min_index == 0:
+        final_index = 2
+    elif max_index == 0 and min_index == 1:
+        final_index = 2
+    elif max_index == 0 and min_index == 2:
+        final_index = 1
+    elif max_index == 2 and min_index == 0:
+        final_index =  1
+    elif max_index == 2 and min_index == 1:
+        final_index =  0
+        
+    return final_index
