@@ -12,6 +12,5 @@ Example
 '''
 
 def factory(x):    
-    new_function = lambda multiply_function: [item * x for item in multiply_function]
+    return lambda multiply_function: [item * x for item in multiply_function]
 
-    return new_function
