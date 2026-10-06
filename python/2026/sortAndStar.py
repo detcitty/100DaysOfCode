@@ -13,5 +13,5 @@ def two_sort(array):
     # your code here
     sorted_array = sorted(array)
     first_string = sorted_array.pop()
-    values = [item+'***' in item for list(first_string)]
+    values = [item+'***' in item for first_string.split()]
     return "".join(values)
