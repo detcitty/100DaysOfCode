@@ -11,7 +11,7 @@ Translations and comments (and upvotes) welcome!
 Example
 '''
 
-def factory(x):
-    
-    values = [item * factor for item in x]
-    return values
+def factory(x):    
+    new_function = lambda multiply_function: [item * x for item in multiply_function]
+
+    return new_function
