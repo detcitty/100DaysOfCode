@@ -12,6 +12,6 @@ You should not remove or add elements from/to the array.
 def two_sort(array):
     # your code here
     sorted_array = sorted(array)
-    first_string = sorted_array.pop()
-    values = [item+'***' in item for first_string.split()]
+    first_string_list = list(sorted_array.pop())
+    values = [f"{item}***" for item in first_string_list]
     return "".join(values)
